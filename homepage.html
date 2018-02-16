@@ -6,6 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="homepage.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="app.js"></script>
 </head>
@@ -48,23 +49,25 @@
 	    <div class="container">
 	      <h1>Sign Up</h1>
 	      <p>Please fill in this form to create an account.</p>
-	      <hr id = "hr2">
-	      <input class = "inputText" type="text" placeholder="Enter Email" name="email" required>
+	      <hr class = "hr2">
+	      <input class = "form-control inputText" type="text" placeholder="Enter Email" name="email" required>
 
-	      <input class = "inputText" type="password" placeholder="Enter Password" name="psw" required>
+	      <input class = "form-control inputText" type="password" placeholder="Enter Password" name="psw" required>
 
-	      <input class = "inputText" type="password" placeholder="Repeat Password" name="psw-repeat" required>
+	      <input class = "form-control inputText" type="password" placeholder="Repeat Password" name="psw-repeat" required>
 	      
 	      <label>
 	        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
 	      </label>
 
-	      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-
-	      <div class="clearfix">
-	        <button class="formBtn" type="button" onclick="document.getElementById('modal').style.display='none'" id="cancelbtn">Cancel</button>
-	        <button class="formBtn" type="submit" id="signupbtn">Sign Up</button>
+	      
+	      <div>
+	      	<button class="formBtn btn btn-danger" type="button" onclick="document.getElementById('modal').style.display='none'" id="cancelbtn">Cancel</button>
+	        <button class="formBtn btn btn-success" type="submit" id="signupbtn">Sign Up</button>
 	      </div>
+	      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+	      <hr class="hr2">
+		<p></p>Already have an account? <a href="#">Sign in</a></p>
 	    </div>
 	  </form>
 	</div>

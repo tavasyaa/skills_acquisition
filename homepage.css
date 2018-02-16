@@ -1,6 +1,6 @@
 #content{
 	text-align: center;
-	margin-top: 25%;
+	margin-top: 15%;
 }
 
 html{
@@ -31,44 +31,12 @@ body{
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
-.formBtn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
-}
-
 
 .inputText {
+	height: 44px;
     width: 100%;
     padding: 15px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: none;
-    background: #f1f1f1;
-}
-
-/* Add a background color when the inputs get focus */
-.inputText:focus {
-    background-color: #ddd;
-    outline: none;
-}
-
-
-/* Extra styles for the cancel button */
-#cancelbtn {
-    padding: 14px 20px;
-    background-color: #f44336;
-}
-
-/* Float cancel and signup buttons and add an equal width */
-#cancelbtn, #signupbtn {
-  float: left;
-  width: 50%;
+    margin: 5px 0 15px 0;
 }
 
 /* Add padding to container elements */
@@ -87,44 +55,33 @@ body{
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: #474e5d;
+    background-color: rgba(0, 0, 0, 0.5);
     padding-top: 50px;
 }
 
 /* Modal Content/Box */
 .modal-content {
-    background-color: #fefefe;
+    background-color: #F7F7F7;
     margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
     width: 50%; /* Could be more or less, depending on screen size */
 }
 
 /* Style the horizontal ruler */
-#hr2 {
-    border: 1px solid #f1f1f1;
+.hr2 {
+    border: 1px solid #b2b8be;
     margin-bottom: 25px;
 }
- 
-/* The Close Button (x) */
-#closeBtn {
-    position: absolute;
-    right: 35px;
-    top: 15px;
-    font-size: 40px;
-    font-weight: bold;
-    color: #f1f1f1;
+
+.formBtn {
+  padding: 14px 20px;
+  margin: 8px 0;
 }
 
-#closeBtn:hover, #closeBtn:focus {
-    color: #f44336;
-    cursor: pointer;
-}
-
-/* Clear floats */
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
+/* Float cancel and signup buttons and add an equal width */
+#cancelbtn, #signupbtn {
+  float: left;
+  width: 50%;
 }
 
 /* Change styles for cancel button and signup button on extra small screens */
