@@ -19,3 +19,14 @@
 	position: relative;
 	top: -30px;
 }
+
+.jumbotron {
+	background-color: #ccff00 !important;
+}
+
+.input-group {
+	width: 965px !important;
+	float: right;
+	position: relative;
+	top: 610px;
+}
