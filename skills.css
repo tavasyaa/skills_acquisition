@@ -1,0 +1,41 @@
+.display-4 {
+	text-align: center;
+}
+
+.list-group-userpage {
+	width: 400px;
+	float: right;
+	position: relative;
+	top: -530px;
+}
+
+.list-group-userplay {
+	float: left;
+	width: 400px;
+}
+
+.card {
+	max-width: 950px;
+	position: relative;
+	top: -30px;
+}
+
+.card.chat{
+	width:900px !important;
+	height:530px !important;
+	position: relative;
+	top: 5px;
+	left:45px;
+}
+
+.jumbotron {
+	background-color: #ccff00 !important;
+}
+
+.input-group {
+	width: 965px !important;
+	float: right;
+	position: relative;
+	top: 610px;
+	right:30px;
+}
