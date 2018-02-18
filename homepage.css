@@ -44,27 +44,17 @@ body{
     padding: 16px;
     width:100%;
 }
-
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0, 0, 0, 0.5);
-    padding-top: 50px;
+.rememberMe {
+  margin-bottom:15px;
 }
-
-/* Modal Content/Box */
-.modal-content {
-    background-color: #F7F7F7;
-    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-    border: 1px solid #888;
-    width: 50%; /* Could be more or less, depending on screen size */
+.submitBtn {
+  float:right;
+}
+.link{
+  color:dodgerblue;
+}
+.signDialog{
+  margin: 15% auto 15% auto;
 }
 
 /* Style the horizontal ruler */
@@ -82,6 +72,10 @@ body{
 #cancelbtn, #signupbtn {
   float: left;
   width: 50%;
+}
+
+.modal-footer {
+  text-align:left;
 }
 
 /* Change styles for cancel button and signup button on extra small screens */
