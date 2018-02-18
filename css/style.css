@@ -137,6 +137,15 @@ a {
   margin-bottom: 0;
 }
 
+.banner {
+    padding-left:10%;
+    padding-right:10%;
+}
+
+.caption {
+    text-align:center;
+}
+
 .txt-rt {
     text-align: right;
 }
@@ -250,7 +259,7 @@ body a:hover {
 }
 
 
-/* .banner-layer{ 
+/* .banner-layer{
 	background:#000;
 	opacity:0.5;
 }*/
