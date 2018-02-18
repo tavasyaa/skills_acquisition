@@ -31,6 +31,10 @@ body{
     border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
+.userBtn:focus, .userBtn:hover{
+  outline: none;
+}
+
 
 .inputText {
 	height: 44px;
@@ -43,9 +47,6 @@ body{
 .container {
     padding: 16px;
     width:100%;
-}
-.rememberMe {
-  margin-bottom:15px;
 }
 .submitBtn {
   float:right;
