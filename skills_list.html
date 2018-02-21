@@ -11,6 +11,16 @@
 	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+	<script type="text/javascript">
+	function search()
+	{
+		var srch=document.getElementById("searchtext").value;
+		// alert(document.getElementById("div1").style.display);
+		document.getElementById("div1").style.display="none";
+		document.getElementById("div2").style.display="none";
+		document.getElementById("div3").style.display="none";
+	}
+	</script>
 </head>
 
 
@@ -36,9 +46,9 @@
                 </div>
                 <form class="navbar-form navbar-left" role="search">
 			        <div class="form-group">
-			            <input type="text" class="form-control" placeholder="Search">
+			            <input id="searchtext" type="text" class="form-control" placeholder="Search">
 			        </div>
-			        <!--<button type="submit" class="btn btn-default">submit</button>-->
+			        <button type="submit" class="btn btn-default" onclick="search()">Go</button>
 			    </form>
             </div>
         </nav>
@@ -49,7 +59,7 @@
 		</div>
 		<div class="wthreeproductdisplay">
 			<div class="row">
-			  <div class="col-sm-6 col-md-4">
+			  <div id="div1" class="col-sm-6 col-md-4">
 			    <div class="thumbnail">
 			      <img src="images/d5.jpg" alt="img">
 			      <div class="caption">
@@ -59,8 +69,8 @@
 			      </div>
 			    </div>
 			  </div>
-			  <div class="col-sm-6 col-md-4">
-			    <div class="thumbnail">
+			  <div id="div2" class="col-sm-6 col-md-4">
+			    <div id="Cooking Entry" class="thumbnail">
 			      <img src="images/d1.jpg" alt="img">
 			      <div class="caption">
 			        <h3>Cooking Entry</h3>
@@ -69,7 +79,7 @@
 			      </div>
 			    </div>
 			  </div>
-			  <div class="col-sm-6 col-md-4">
+			  <div id="div3" class="col-sm-6 col-md-4">
 			    <div class="thumbnail">
 			      <img src="images/d8.jpg" alt="img">
 			      <div class="caption">
@@ -163,7 +173,7 @@
 			<div class="modal-body">
 				<div class="form-group">
 			    	<label for="name">Skill Name:</label>
-			    	<input type="text" class="form-control" id="name" placeholder="Please input skill name">
+			    	<input type="text" class="form-control" id="name" placeholder="">
 			  	</div>
 			 	 <br>
 		        <div class="form-group">
