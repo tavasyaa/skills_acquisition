@@ -7,7 +7,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<link rel="stylesheet" href="css/font-awesome.css" type="text/css" media="all">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
 </head>
 
@@ -18,7 +20,6 @@
             <div class="navbar-header">
                 <a class="navbar-brand" href="homepage.html">Skill-It</a>
             </div>
-
             <div class="collapse navbar-collapse">
                 <div class="navbar-form navbar-right">
                     <a class="btn btn-info" href="userpage.html" role="button">Hey Chris!</a>
@@ -26,8 +27,19 @@
                 </div>
                 <form class="navbar-form navbar-left">
                   <a class="btn btn-default" href="skills_list.html" role="button">All Skills/Groups</a>
-                  <a class="btn btn-default" href="#" role="button">+</a>
+                  <a href="#" data-toggle="modal" data-target="#exampleModalCenter"><span class="link-spanner"></span></a>
                 </form>
+                <div class="navbar-form navbar-left">
+	            	<button class="btn btn-default" data-toggle="modal" data-target="#myModal">
+						Add new skill
+					</button>
+                </div>
+                <form class="navbar-form navbar-left" role="search">
+			        <div class="form-group">
+			            <input type="text" class="form-control" placeholder="Search">
+			        </div>
+			        <!--<button type="submit" class="btn btn-default">submit</button>-->
+			    </form>
             </div>
         </nav>
 	<div class="banner">
@@ -42,8 +54,8 @@
 			      <img src="images/d5.jpg" alt="img">
 			      <div class="caption">
 			        <h3>Laser Tag</h3>
-			        <p><a href="#" class="btn btn-primary" role="button">Strategies</a> </p>
-			        <p><a href="#" class="btn btn-primary" role="button">Groups</a> </p>
+			        <p><a href="#" class="btn btn-primary" role="button">Strategies</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			        <a href="#" class="btn btn-primary" role="button">Groups</a> </p>
 			      </div>
 			    </div>
 			  </div>
@@ -52,7 +64,8 @@
 			      <img src="images/d1.jpg" alt="img">
 			      <div class="caption">
 			        <h3>Cooking Entry</h3>
-			        <p><a href="#" class="btn btn-primary" role="button">Strategies and Groups</a> </p>
+			        <p><a href="#" class="btn btn-primary" role="button">Strategies</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			        <a href="#" class="btn btn-primary" role="button">Groups</a> </p>
 			      </div>
 			    </div>
 			  </div>
@@ -61,7 +74,8 @@
 			      <img src="images/d8.jpg" alt="img">
 			      <div class="caption">
 			        <h3>Piano (mid-level)</h3>
-			        <p><a href="#" class="btn btn-primary" role="button">Strategies and Groups</a> </p>
+			        <p><a href="#" class="btn btn-primary" role="button">Strategies</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			        <a href="#" class="btn btn-primary" role="button">Groups</a> </p>
 			      </div>
 			    </div>
 			  </div>
@@ -69,10 +83,11 @@
 			<div class="row">
 			  <div class="col-sm-6 col-md-4">
 			    <div class="thumbnail">
-			      <img src="images/d4.png" alt="img">
+			      <img src="images/d4.jpeg" alt="img">
 			      <div class="caption">
 			        <h3>Work Out Tips</h3>
-			        <p><a href="#" class="btn btn-primary" role="button">Strategies and Groups</a> </p>
+			        <p><a href="#" class="btn btn-primary" role="button">Strategies</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			        <a href="#" class="btn btn-primary" role="button">Groups</a> </p>
 			      </div>
 			    </div>
 			  </div>
@@ -81,7 +96,8 @@
 			      <img src="images/d7.jpeg" alt="img">
 			      <div class="caption">
 			        <h3>Leather Working</h3>
-			        <p><a href="#" class="btn btn-primary" role="button">Strategies and Groups</a> </p>
+			        <p><a href="#" class="btn btn-primary" role="button">Strategies</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			        <a href="#" class="btn btn-primary" role="button">Groups</a> </p>
 			      </div>
 			    </div>
 			  </div>
@@ -90,7 +106,8 @@
 			      <img src="images/d3.jpg" alt="img">
 			      <div class="caption">
 			        <h3>Ice Skating</h3>
-			        <p><a href="#" class="btn btn-primary" role="button">Strategies and Groups</a> </p>
+			        <p><a href="#" class="btn btn-primary" role="button">Strategies</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			        <a href="#" class="btn btn-primary" role="button">Groups</a> </p>
 			      </div>
 			    </div>
 			  </div>
@@ -101,7 +118,8 @@
 			      <a href="guitar.html"><img src="images/d2.jpg" alt="img"></a>
 			      <div class="caption">
 			        <h3>Guitar Playing</h3>
-			        <p><a href="guitar.html" class="btn btn-primary" role="button">Strategies and Groups</a> </p>
+			        <p><a href="guitar.html" class="btn btn-primary" role="button">Strategies</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			        <a href="#" class="btn btn-primary" role="button">Groups</a> </p>
 			      </div>
 			    </div>
 			  </div>
@@ -110,7 +128,8 @@
 			      <img src="images/d6.jpg" alt="img">
 			      <div class="caption">
 			        <h3>Dance</h3>
-			        <p><a href="#" class="btn btn-primary" role="button">Strategies and Groups</a> </p>
+			        <p><a href="#" class="btn btn-primary" role="button">Strategies</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			        <a href="#" class="btn btn-primary" role="button">Groups</a> </p>
 			      </div>
 			    </div>
 			  </div>
@@ -128,6 +147,40 @@
 			<p>© 2018 Skill list All rights reserved | Design by NU students
 			</p>
 		</div>
+
+		<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+				<h4 class="modal-title" id="myModalLabel">
+					Add a new skill
+				</h4>
+			</div>
+			<div class="modal-body">
+				<div class="form-group">
+			    	<label for="name">Skill Name:</label>
+			    	<input type="text" class="form-control" id="name" placeholder="Please input skill name">
+			  	</div>
+			 	 <br>
+		        <div class="form-group">
+			    	<label for="name">Description:</label>
+			    	<textarea class="form-control" rows="4"></textarea>
+			  	</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">close
+				</button>
+				<button type="button" class="btn btn-primary">
+					submit
+				</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
 
 	</div>
 </body>

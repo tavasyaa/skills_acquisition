@@ -137,6 +137,11 @@ a {
   margin-bottom: 0;
 }
 
+.searchText{
+    width: 400px;
+    height: 30px;
+}
+
 .banner {
     padding-left:10%;
     padding-right:10%;
