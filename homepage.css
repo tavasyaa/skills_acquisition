@@ -49,25 +49,31 @@ body{
     width:100%;
 }
 
-.submitBtn {
-     float:right;
+.form-btn {
+    float:right;
+    min-width: 102px;
 }
+
+
+
 .link{
     color:dodgerblue;
 }
+
+.modal-footer{
+    font-size: 12px;
+    color: #545452;
+}
+
 .signDialog{
     margin: 15% auto 15% auto;
+    max-height: 800px;
 }
 
 /* Style the horizontal ruler */
 .hr2 {
     border: 1px solid #b2b8be;
     margin-bottom: 25px;
-}
-
-.formBtn {
-    padding: 14px 20px;
-    margin: 8px 0;
 }
 
 /* Float cancel and signup buttons and add an equal width */
@@ -87,3 +93,54 @@ body{
        width: 100%;
     }
 }
+
+
+.signUp-step-interest_picker {
+    display: none;
+}
+
+.subscribe-btn{
+    min-width:130px;
+    float:right;
+    text-transform: uppercase;
+}
+.subscribe-btn:focus, .subscribe-btn:hover{
+    outline: none;
+}
+
+.interest-item{
+    border: 1px solid #ccc;
+    line-height: 2.5;
+    max-height: 300px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.interest-item li:nth-of-type(2n){
+    background-color: #f7f7f7;
+}
+
+.progress{
+    margin:0 auto;
+    width:70%;
+}
+
+.back-btn{
+    background-color: transparent;
+    min-width: 102px;
+    color: #a5a4a4;
+}
+
+.item-count{
+    text-align: center;
+}
+
+.icon-img{
+    float:left;
+    border-radius: 50%;
+    height: 34px;
+    width: 34px;
+    margin:auto 10px;
+}
+
+
