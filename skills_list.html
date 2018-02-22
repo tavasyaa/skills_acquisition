@@ -184,6 +184,21 @@
 			    	<label for="name">Description:</label>
 			    	<textarea class="form-control" rows="4"></textarea>
 			  	</div>
+			  	<input id="lefile" type="file" style="display:none"> 
+				<div class="input-append" style="display:none"> 
+					<input id="photoCover" type="text" class="form-control"> 
+					<a class="btn btn-primary" role="button" onclick="$('input[id=lefile]').click();">Browse</a> 
+				</div> 
+				<br>
+				<div class="form-group">
+					<label for="name">Choose a picture as your cover:</label>
+					<div class="input-group input-file" name="Fichier1">
+    					<input type="text" class="form-control" placeholder='Choose a file...' />			
+           				<span class="input-group-btn">
+        				<button class="btn btn-default btn-choose" type="button" onclick="$('input[id=lefile]').click();">Choose</button>
+    					</span>
+					</div>
+				</div>
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default" data-dismiss="modal">close
