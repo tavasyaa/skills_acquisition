@@ -3,30 +3,41 @@
 <head>
 	<title> Skill-It </title>
 	<link rel="stylesheet" type="text/css" href="skills.css"/>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="userpage.css"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="homepage.html">Skill-It</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="btn btn-outline-secondary" href="skills_list.html" role="button">All Skills/Groups</a>&#160; &#160;
-      </li>
-      <li class="nav-item">
-        <a class="btn btn-outline-secondary" href="#" role="button">+</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-    <a class="btn btn-primary" href="userpage.html" role="button">Hey Chris!</a>&#160; &#160;
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Log Out</button>
-    </form>
-  </div>
-</nav>
+	<nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="homepage.html">Skill-It</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <div class="navbar-form navbar-right">
+                    <a class="btn btn-info" href="userpage.html" role="button">Hey Chris!</a>
+                    <button type="button" class="btn btn-success" href="#">Logout</button>
+                </div>
+                <form class="navbar-form navbar-left">
+                  <a class="btn btn-default" href="skills_list.html?" role="button">All Skills/Groups</a>
+                  <a href="#" data-toggle="modal" data-target="#exampleModalCenter"><span class="link-spanner"></span></a>
+                </form>
+                <div class="navbar-form navbar-left">
+                <button class="btn btn-default" data-toggle="modal" data-target="#myModal">
+            Add new skill
+          </button>
+                </div>
+                <form action="#" type="post" class="navbar-form navbar-left" role="search">
+              <div class="form-group">
+                  <input id="searchtext" type="text" class="form-control" placeholder="Search">
+              </div>
+          <button class="btn btn-default" type="submit" onclick="search()">Go</button>
+          </form>
+            </div>
+        </nav>
 
 <div class="jumbotron jumbotron-fluid">
   <div class="container">
@@ -34,78 +45,190 @@
   </div>
 </div>
 
-<div class="card w-75">
-  <div class="card-body">
-    <h5 class="card-title">Michael has mastered fencing!</h5>
-    <p class="card-text">08/27 - Michael has been fencing for over fifty days, mastering over three techniques.</p>
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Greg started baking today!</h5>
-    <p class="card-text">Click here to view Greg's recently baked cupcake!</p>
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Join Matt at honing soccer skills</h5>
-    <p class="card-text">Want to learn how to dribble like Neymar? Ask Matt, who's handling the dribbling skill well!</p>
-  </div>
-    <div class="card-body">
-    <h5 class="card-title">Want to learn to play the violin? Talk to Julia!</h5>
-    <p class="card-text">Listen to some soothing Chopin as Julia truly excels.</p>
-  </div>
-    <div class="card-body">
-    <h5 class="card-title">Hit a hole in one with Freddy!</h5>
-    <p class="card-text">We're very impressed with Freddy, is he the next Tiger Woods?</p>
-  </div>
-</div>
 
-<ul class="list-group list-group-userpage">
-  <li class="list-group-item d-flex justify-content-between align-items-center">
-    Fencing
-    <span class="badge badge-primary badge-pill">14</span>
-  </li>
-  <li class="list-group-item d-flex justify-content-between align-items-center">
-    Soccer
-    <span class="badge badge-primary badge-pill">2</span>
-  </li>
-  <li class="list-group-item d-flex justify-content-between align-items-center">
-    Baking
-    <span class="badge badge-primary badge-pill">1</span>
-  </li>
-   <li class="list-group-item d-flex justify-content-between align-items-center">
-    Lacrosse
-    <span class="badge badge-primary badge-pill">1</span>
-  </li>
-   <li class="list-group-item d-flex justify-content-between align-items-center">
-    Painting
-    <span class="badge badge-primary badge-pill">1</span>
-  </li>
-   <li class="list-group-item d-flex justify-content-between align-items-center">
-    Time-Management
-    <span class="badge badge-primary badge-pill">1</span>
-  </li>
-   <li class="list-group-item d-flex justify-content-between align-items-center">
-    Sudoku
-    <span class="badge badge-primary badge-pill">1</span>
-  </li>
-   <li class="list-group-item d-flex justify-content-between align-items-center">
-    Cricket
-    <span class="badge badge-primary badge-pill">1</span>
-  </li>
-     <li class="list-group-item d-flex justify-content-between align-items-center">
-    Mariachi
-    <span class="badge badge-primary badge-pill">1</span>
-  </li>
-     <li class="list-group-item d-flex justify-content-between align-items-center">
-    Banjo
-    <span class="badge badge-primary badge-pill">1</span>
-  </li>
-     <li class="list-group-item d-flex justify-content-between align-items-center">
-    Cookie making
-    <span class="badge badge-primary badge-pill">1</span>
-  </li>
-</ul>
+
+<div class="container">
+  <ul class="nav nav-tabs">
+    <li role="presentation" class="active" id="posts-li"><a href="#" id="posts-a">Recent Posts</a></li>
+    <li role="presentation" id="progress-li"><a href="#" id="progress-a">Friends' Progress</a></li>
+    <li role="presentation" id="messages-li"><a href="#" id="messages-a">Messages</a></li>
+  </ul>
+
+  <div class="posts-menu">
+    <div class="media">
+      <div class="media-left">
+        <a href="#">
+          <img src="images/guitar1.jpg" width="128" height="128" class="media-object" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">Cool Starter Apps <span class="label label-info skill-label">Guitar Playing</span></h4>
+        <p>Hey guys!</p>
+        <p>
+          I'd definetely recommend the <a href="https://itunes.apple.com/us/app/all-guitar-chords/id416947605?mt=8">All Chords</a> and <a href="https://itunes.apple.com/us/app/ultimate-guitar-chords-tabs/id357828853?mt=8">Tabs&Chords</a> apps to any beginners out there. The first one helps teach you fingering for all kinds of chords and the second one is great for getting the chords or tabs for tons of songs!
+          <br>
+          <button type="button" class="btn btn-primary btn-sm read-btn" href="#">Read more</button>
+        </p>
+          <div class="post-info1">
+            <i class="glyphicon glyphicon-comment"></i> <a href="#">3 Comments</a>
+            | <i class="glyphicon glyphicon-thumbs-up"></i> <a href="#">4 Likes</a>
+          </div>
+          <div class="post-info2">
+            <i class="glyphicon glyphicon-user"></i> by <a href="#">John</a>
+            | <i class="glyphicon glyphicon-calendar"></i> Sept 16th, 2017
+          </div>
+        <p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="media">
+      <div class="media-left">
+        <a href="#">
+          <img src="images/guitar2.jpg" width="128" height="128" class="media-object" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">Chordify <span class="label label-info skill-label">Guitar Playing</span> </h4>
+        <p>Hey guys!</p>
+        <p>
+          If you ever want the chords for a favorite song but can't find them, check out <a href="https://chordify.net/">chordify.net</a>. It converts songs to chords!
+          <br>
+          <button type="button" class="btn btn-primary btn-sm read-btn" href="#">Read more</button>
+        </p>
+          <div class="post-info1">
+            <i class="glyphicon glyphicon-comment"></i> <a href="#">2 Comments</a>
+            | <i class="glyphicon glyphicon-thumbs-up"></i> <a href="#">8 Likes</a>
+          </div>
+          <div class="post-info2">
+            <i class="glyphicon glyphicon-user"></i> by <a href="#">Mike</a>
+            | <i class="glyphicon glyphicon-calendar"></i> Sept 03th, 2017
+          </div>
+        <p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="media">
+      <div class="media-left">
+        <a href="#">
+          <img src="images/neymar.jpg" width="128" height="128" class="media-object" alt="">
+        </a>
+      </div>
+      <div class="media-body">
+        <h4 class="media-heading">Awesome dribbling skill <span class="label label-info skill-label">Soccer Skills</span> </h4>
+        <p>
+          Want to learn how to dribble like Neymar? Tutorial: learn to do 6 Neymar tricks in seconds.
+          <br>
+          <button type="button" class="btn btn-primary btn-sm read-btn" href="#">Read more</button>
+        </p>
+          <div class="post-info1">
+            <i class="glyphicon glyphicon-comment"></i> <a href="#">7 Comments</a>
+            | <i class="glyphicon glyphicon-thumbs-up"></i> <a href="#">24 Likes</a>
+          </div>
+          <div class="post-info2">
+            <i class="glyphicon glyphicon-user"></i> by <a href="#">Michael</a>
+            | <i class="glyphicon glyphicon-calendar"></i> Aug 11th, 2017
+          </div>
+        <p>
+      </div>
+    </div>
+  </div>
+
+  <div class="progress-menu">
+    <ul class="list-group">
+      <li class="list-group-item">
+        <h4><i class="fa fa-trophy"></i> Michael has mastered fencing!</h4>
+        08/27 - <a href="#">Michael</a> has been fencing for over fifty days, mastering over three techniques.
+      </li>
+
+      <li class="list-group-item">
+        <h4><i class="fa fa-star-half"></i> Greg started baking today!!</h4>
+        <a href="#"> Click here </a> to view <a href="#">Greg</a>'s recently baked cupcake!</p>
+      </li>
+
+      <li class="list-group-item">
+        <h4><i class="fa fa-trophy"></i> Join Matt at honing soccer skills</h4>
+        Want to learn how to dribble like Neymar? Ask <a href="#">Matt</a>, who's handling the dribbling skill well!
+      </li>
+
+      <li class="list-group-item">
+        <h4><i class="fa fa-star"></i> Want to learn to play the violin? Talk to Julia</h4>
+        Listen to some soothing Chopin as <a href="#">Julia</a> truly excels.
+      </li>
+
+      <li class="list-group-item">
+        <h4><i class="fa fa-trophy"></i> Hit a hole in one with Freddy</h4>
+        We're very impressed with <a href="#">Freddy</a>, is he the next Tiger Woods?
+      </li>
+
+
+    </ul>
+  </div>
+
+  <div class="messages-menu">
+    <div class="list-group">
+      <button class="list-group-item" type="button">
+        Fencing
+        <span class="badge badge-primary badge-pill">14</span>
+      </button>
+
+      <button class="list-group-item" type="button">
+        Soccer
+        <span class="badge badge-primary badge-pill">14</span>
+      </button>
+
+      <button class="list-group-item" type="button">
+        Baking
+        <span class="badge badge-primary badge-pill">14</span>
+      </button>
+
+      <button class="list-group-item" type="button">
+        Lacrosse
+        <span class="badge badge-primary badge-pill">14</span>
+      </button>
+
+      <button class="list-group-item" type="button">
+        Painting
+        <span class="badge badge-primary badge-pill">14</span>
+      </button>
+
+      <button class="list-group-item" type="button">
+        Time-Management
+        <span class="badge badge-primary badge-pill">14</span>
+      </button>
+
+      <button class="list-group-item" type="button">
+        Sudoku
+        <span class="badge badge-primary badge-pill">14</span>
+      </button>
+
+      <button class="list-group-item" type="button">
+        Cricket
+        <span class="badge badge-primary badge-pill">14</span>
+      </button>
+
+      <button class="list-group-item" type="button">
+        Cookie Making
+        <span class="badge badge-primary badge-pill">14</span>
+      </button>
+      
+    </div>
+    
+  </div>
+  
+
+
+
+
+
 <div class="copyright text-center">
   <p>© 2018 Skill list All rights reserved | Design by NU students
   </p>
 </div>
+
+<script type="text/javascript" src="userpage.js"></script>
 </body>
 </html>
