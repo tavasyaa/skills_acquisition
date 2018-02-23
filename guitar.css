@@ -55,6 +55,10 @@ h1.card-header {
   float:right;
 }
 
+.skill_desc a {
+  float:right;
+}
+
 .right {
   float:right;
 }
