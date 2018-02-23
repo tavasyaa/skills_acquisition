@@ -142,11 +142,6 @@ a {
     height: 30px;
 }
 
-.banner {
-    padding-left:10%;
-    padding-right:10%;
-}
-
 .caption {
     text-align:center;
 }
@@ -261,6 +256,8 @@ body a:hover {
     background-size: cover;
     background-attachment: fixed;
     background: #0f3370;
+    padding-left:10%;
+    padding-right:10%;
 }
 
 
