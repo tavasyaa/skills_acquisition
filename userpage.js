@@ -1,0 +1,29 @@
+$("#progress-a").click(function(){
+	$("#posts-li").removeClass("active");
+	$("#messages-li").removeClass("active");
+	$("#progress-li").addClass("active");
+	$(".progress-menu").show();
+	$(".posts-menu").hide();
+	$(".messages-menu").hide();
+	event.stopPropagation();
+});
+
+$("#posts-a").click(function(){
+	$("#progress-li").removeClass("active");
+	$("#messages-li").removeClass("active");
+	$("#posts-li").addClass("active");
+	$(".posts-menu").show();
+	$(".progress-menu").hide();
+	$(".messages-menu").hide();
+	event.stopPropagation();
+});
+
+$("#messages-a").click(function(){
+	$("#progress-li").removeClass("active");
+	$("#posts-li").removeClass("active");
+	$("#messages-li").addClass("active");
+	$(".messages-menu").show();
+	$(".posts-menu").hide();
+	$(".progress-menu").hide();
+	event.stopPropagation();
+});
