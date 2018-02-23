@@ -21,11 +21,11 @@
 }
 
 .card.chat{
-	width:900px !important;
+	width:1000px !important;
 	height:530px !important;
 	position: relative;
 	top: 5px;
-	left:190px;
+	left:20px;
 }
 
 .jumbotron {
@@ -33,9 +33,26 @@
 }
 
 .input-group {
-	width: 965px !important;
+	width: 1020px !important;
 	float: right;
 	position: relative;
 	top: 610px;
-	right:300px;
 }
+
+.searchpic {
+	width: 30px;
+	height: 30px;
+}
+
+.search {
+	width:300px;
+}
+
+.infobutton {
+	width: 30px;
+	height: 30px;
+	position: relative;
+	left: 980px;
+}
+
+
