@@ -17,15 +17,12 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="btn btn-outline-secondary" href="skills_list.html" role="button">All Skills/Groups</a>&#160; &#160;
-      </li>
-      <li class="nav-item">
-        <a class="btn btn-outline-secondary" href="#" role="button">+</a>
+        <a class="btn btn-primary" href="skills_list.html" role="button">All Skills/Groups</a>&#160; &#160;
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-    <a class="btn btn-primary" href="userpage.html" role="button">Hey Chris!</a>&#160; &#160;
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Log Out</button>
+    <a class="btn btn-info" href="userpage.html" role="button">Hey Chris!</a>&#160; &#160;
+      <button class="btn btn-success my-2 my-sm-0" type="submit">Log Out</button>
     </form>
   </div>
 </nav>
@@ -41,26 +38,7 @@
 <!-- BRUCE CHECK THIS PART - the line above this is the button, and right below is the modal code
 -->
 
-<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Add Group</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        Name: <input type="text" name="name"><br>
-        Description: <input type="text" name="description"><br>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save</button>
-      </div>
-    </div>
-  </div>
-</div>
+
 
     <li class="list-group-item d-flex justify-content-between align-items-center">
     <input type="text" name="search" class="search" id="searchfield">
@@ -68,31 +46,11 @@
     <span class="badge badge-primary badge-pill"></span>
   </li>
   <li class="list-group-item list-group-item-info d-flex justify-content-between align-items-center">
-    Group Play   <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal2">  <img src="images/info.png" class="infobutton"></button>
+    Group Play   <!-- <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal2">  <img src="images/info.png" class="infobutton"></button> -->
+    <a data-toggle="modal" data-target="#modal2"><img src="images/info.png" class="infobutton"></a>
 
 
-    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Group Play</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        Find people to jam with!<br><br>
-        Members: <br>
-        Jo<br>
-        Allan<br>
-        Abhi<br>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
+
 
 
     <span class="badge badge-primary badge-pill">0</span>
@@ -178,11 +136,54 @@
 </div>
 
 </div>
+
+
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Add Group</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Name: <input type="text" name="name"><br><br>
+        Description: <input type="text" name="description"><br>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>&#160; &#160;
+        <button type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Group Play</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Find people to jam with!<br><br>
+        Members: <br>
+        Jo<br>
+        Allan<br>
+        Abhi<br>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
 <script src="group_play.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-
-</body>
 </html>
