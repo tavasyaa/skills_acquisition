@@ -5,12 +5,14 @@
 	<link rel="stylesheet" type="text/css" href="skills.css"/>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
-<body>
+
+<body class="groupplaybody">
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="homepage.html">Skill-It</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
+
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
@@ -28,72 +30,97 @@
   </div>
 </nav>
 
+<div class="padding">
+
+
 	<ul class="list-group list-group-userplay">
   <li class="list-group-item d-flex justify-content-between align-items-center">
     <h4>Your Groups</h4>
-    <img src="images/info.png" class="infobutton">
+    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModalLong">Add Group</button>
+
+<!-- BRUCE CHECK THIS PART - the line above this is the button, and right below is the modal code
+-->
+
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
     <li class="list-group-item d-flex justify-content-between align-items-center">
-    <input type="text" name="search" class="search">
-    <img src="images/search.png" class="searchpic">
+    <input type="text" name="search" class="search" id="searchfield">
+    <button id="searchy" onclick="search()""><img src="images/search.png" class="searchpic"></button>
     <span class="badge badge-primary badge-pill"></span>
   </li>
   <li class="list-group-item list-group-item-info d-flex justify-content-between align-items-center">
-    Group Play
+    Group Play     <img src="images/info.png" class="infobutton">
     <span class="badge badge-primary badge-pill">0</span>
   </li>
   </li>
-  <li class="list-group-item d-flex justify-content-between align-items-center">
-    Fencing
+  <li class="list-group-item d-flex justify-content-between align-items-center groupsjoined" id="secondlisting">
+    Jammin' Up
     <span class="badge badge-primary badge-pill">14</span>
   </li>
   <li class="list-group-item d-flex justify-content-between align-items-center">
-    Soccer
-    <span class="badge badge-primary badge-pill">2</span>
+    Concert Prep
+    <span class="badge badge-primary badge-pill">Join Group</span>
   </li>
-  <li class="list-group-item d-flex justify-content-between align-items-center">
-    Baking
+  <li class="list-group-item d-flex justify-content-between align-items-center groupsjoined">
+    Classical Music Recommendations
+    <span class="badge badge-primary badge-pill">1</span>
+  </li>
+   <li class="list-group-item d-flex justify-content-between align-items-center groupsjoined">
+    Strumming patterns
     <span class="badge badge-primary badge-pill">1</span>
   </li>
    <li class="list-group-item d-flex justify-content-between align-items-center">
-    Lacrosse
+    Alternate Picking Group
+    <span class="badge badge-primary badge-pill">Join Group </span>
+  </li>
+   <li class="list-group-item d-flex justify-content-between align-items-center groupsjoined">
+   	White Stripes Fans
     <span class="badge badge-primary badge-pill">1</span>
   </li>
-   <li class="list-group-item d-flex justify-content-between align-items-center">
-    Painting
-    <span class="badge badge-primary badge-pill">1</span>
+   <li class="list-group-item d-flex justify-content-between align-items-center groupsjoined">
+    Bangin it
+    <span class="badge badge-primary badge-pill">5</span>
   </li>
    <li class="list-group-item d-flex justify-content-between align-items-center">
-    Time-Management
-    <span class="badge badge-primary badge-pill">1</span>
-  </li>
-   <li class="list-group-item d-flex justify-content-between align-items-center">
-    Sudoku
-    <span class="badge badge-primary badge-pill">1</span>
-  </li>
-   <li class="list-group-item d-flex justify-content-between align-items-center">
-    2048
-    <span class="badge badge-primary badge-pill">1</span>
+    The Annual Wake Street Show
+    <span class="badge badge-primary badge-pill">Join Group</span>
   </li>
      <li class="list-group-item d-flex justify-content-between align-items-center">
-    Cricket
-    <span class="badge badge-primary badge-pill">1</span>
+    Anyone wanna watch Green Day?
+    <span class="badge badge-primary badge-pill">Join Group</span>
   </li>
      <li class="list-group-item d-flex justify-content-between align-items-center">
-    Mariachi
-    <span class="badge badge-primary badge-pill">1</span>
+    Help with rhythm mistakes!
+    <span class="badge badge-primary badge-pill">Join Group</span>
   </li>
      <li class="list-group-item d-flex justify-content-between align-items-center">
-    Banjo
-    <span class="badge badge-primary badge-pill">1</span>
-  </li>
-  <li class="list-group-item d-flex justify-content-between align-items-center">
-    Cookie Making
-    <span class="badge badge-primary badge-pill">1</span>
+    String quality
+    <span class="badge badge-primary badge-pill">Join Group</span>
   </li>
 </ul>
 
+
+
 <div class="input-group mb-3">
-  <input type="text" class="form-control" placeholder="Reply..." aria-label="Recipient's username" aria-describedby="basic-addon2" id="chat">
+  <input type="text" class="form-control" placeholder="Post message..." aria-label="Recipient's username" aria-describedby="basic-addon2" id="chat">
   <div class="input-group-append">
     <button class="btn btn-outline-secondary" type="button" onclick="sendchat()">Send</button>
   </div>
@@ -101,6 +128,16 @@
 
 <div class="card chat">
   <div class="card-body" id="card-body">
+  	<div class="card chatitem">
+  <div class="card-body">
+    bob1324: Let's play this Saturday at 5?
+  </div>
+</div>
+  	<div class="card chatitem">
+  <div class="card-body">
+    mechwiz: Oh yea that works for me!
+  </div>
+</div>
   </div>
 </div>
 <br/>
@@ -110,8 +147,13 @@
 <div class="copyright text-center">
         <p>© 2018 Skill list All rights reserved | Design by NU students
         </p>
+
+</div>
+
 </div>
 <script src="group_play.js"></script>
+
+
 
 </body>
 </html>

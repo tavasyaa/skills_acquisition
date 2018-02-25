@@ -12,20 +12,22 @@
 .list-group-userplay {
 	float: left;
 	width: 400px;
+	position: relative;
+	top: 10px;
 }
 
 .card {
-	max-width: 950px;
+	max-width: 735px;
 	position: relative;
 	top: -30px;
 }
 
 .card.chat{
 	width:1000px !important;
-	height:530px !important;
+	height:550px !important;
 	position: relative;
-	top: 5px;
-	left:20px;
+	top: -43px;
+	left: 20px;
 }
 
 .jumbotron {
@@ -33,10 +35,11 @@
 }
 
 .input-group {
-	width: 1020px !important;
+	width: 735px !important;
 	float: right;
 	position: relative;
-	top: 610px;
+	top: 570px;
+	left: 3px;
 }
 
 .searchpic {
@@ -52,7 +55,30 @@
 	width: 30px;
 	height: 30px;
 	position: relative;
-	left: 980px;
+	left: -105px;
+}
+
+.groupsjoined {
+	background-color: #98FB98 !important;
+}
+
+.chatitem {
+	position: relative !important;
+	top: 5px !important;
+}
+
+.groupplaybody {
+	background-color: #0f3370;
+}
+
+.btn-secondary {
+	position: relative;
+	left: 10px;
+}
+
+.padding {
+	padding-left: 10%;
+	padding-right: 10%;
 }
 
 
