@@ -114,7 +114,10 @@ h1.card-header {
 }
 
 .container{
-    margin-top:20px;
+    max-height:300px;
+    overflow-y:auto;
+    overflow-x:hidden;
+    width:inherit;
 }
 .image-preview-input {
     position: relative;
