@@ -101,6 +101,7 @@ section {
     display: block;
 }
 
+
 ol,
 ul {
     list-style: none;
@@ -132,6 +133,12 @@ table {
 a {
     text-decoration: none;
 }
+
+.new-btn {
+    float: right;
+    
+}
+
 
 .navbar {
   margin-bottom: 0;
