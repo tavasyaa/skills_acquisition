@@ -93,6 +93,7 @@ h1.card-header {
   background-color:#0f3370;
   padding-left:10%;
   padding-right:10%;
+  min-height:550px;
 }
 
 .navbar {
