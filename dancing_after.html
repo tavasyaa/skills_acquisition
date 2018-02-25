@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dance Page</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.css" type="text/css" media="all">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="guitar.css"/>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/> -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="homepage.html">Skill-It</a>
+            </div>
+
+            <div class="collapse navbar-collapse">
+                <div class="navbar-form navbar-right">
+                  <a class="btn btn-info" href="userpage.html" role="button">Hey Chris!</a>
+                    <button type="button" class="btn btn-success" href="#">Logout</button>
+                </div>
+                <form class="navbar-form navbar-left">
+                  <a class="btn btn-primary" href="skills_list.html" role="button">All Skills/Groups</a>
+                </form>
+            </div>
+        </nav>
+
+
+    <div class="grid-container">
+      <div class="header">
+        <h1 class="title-layouts">
+        <span class="fa fa-object-group" aria-hidden="true"></span>Dance Strategies</h1>
+        <div class="skill_desc">
+          <h4><b>Description: </b>Check out these resources to help you learn new dance moves!</h4>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Create Strategy</button>
+        </div>
+          <hr>
+      </div>
+      <!-- <div class="left">Column</div> -->
+      <div class="middle">
+        <div class="thumbnail">
+          <div class="row">
+          <div class="col-md-12">
+            <h4><strong><a href="#">Cool Moonwalk Vido</a></strong></h4>
+            <hr>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+            <a href="#">
+                <img src="images/jackson.jpg" width="260" height="180" class="img-thumbnail" alt="">
+            </a>
+          </div>
+          <div class="col-md-10">
+            <p>
+              Hey guys!
+              <br/>
+              <br/>
+              Check out this <a href="https://www.wikihow.com/Moonwalk">article</a> to learn how to do the moonwalk. It helped me a ton! The video <a href="https://youtu.be/E_FzgtLVzbI">here</a> is pretty aweseome too.
+            </p>
+            <p><a class="btn btn-primary" href="dancingpost.html" role="button">Read More</a>
+            </p>
+          </div>
+    </div>
+        <div class="row">
+          <div class="col-md-2">
+            <p></p>
+            <p>
+              <i class="glyphicon glyphicon-user"></i> by <a href="#">Chris</a>
+              | <i class="glyphicon glyphicon-calendar"></i> Sept 16th, 2012
+            </p>
+          </div>
+          <div class="col-md-4">
+            <p></p>
+            <p>
+              <i class="glyphicon glyphicon-comment"></i> <a href="#">3 Comments</a>
+              | <i class="glyphicon glyphicon-thumbs-up"></i> <a href="#">4 Likes</a>
+            </p>
+          </div>
+        </div>
+          </div>
+
+        <hr>
+
+      </div>
+
+    <div class="footer">
+      <div class="copyright text-center">
+        <p>© 2018 Skill list All rights reserved | Design by NU students
+        </p>
+      </div>
+    </div>
+  </div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel">Create Strategy</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <form action="" method="POST">
+
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" class="form-control" name="title" />
+            </div>
+
+            <div class="form-group">
+                <label for="description">Strategy</label>
+                <textarea rows="5" class="form-control" name="description" ></textarea>
+            </div>
+
+            <div class="form-group">
+              <label>Upload Image</label>
+              <div class="input-group image-preview">
+                <input type="text" class="form-control image-preview-filename" disabled="disabled"> <!-- don't give a name === doesn't send on POST/GET -->
+                <span class="input-group-btn">
+                    <!-- image-preview-clear button -->
+                    <button type="button" class="btn btn-default image-preview-clear">
+                        <span class="glyphicon glyphicon-remove"></span> Clear
+                    </button>
+                    <!-- image-preview-input -->
+                    <div class="btn btn-default image-preview-input">
+                        <span class="glyphicon glyphicon-folder-open"></span>
+                        <span class="image-preview-input-title">Browse</span>
+                        <input type="file" accept="image/png, image/jpeg, image/gif" name="input-file-preview"/> <!-- rename it -->
+                    </div>
+                </span>
+            </div><!-- /input-group image-preview [TO HERE]-->
+            </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Create Strategy</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  </body>
+  <script type="text/javascript" src="guitar.js"></script>
+</html>
