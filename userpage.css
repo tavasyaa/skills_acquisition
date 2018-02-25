@@ -1,3 +1,7 @@
+.navbar{
+	margin-bottom: 0;
+}
+
 .posts-menu{
 	margin-top: 20px;
 }
@@ -16,4 +20,8 @@
 
 .messages-menu{
 	display: none;
+}
+
+.badge{
+	background-color: #007bff;
 }
