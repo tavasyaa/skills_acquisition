@@ -1,0 +1,57 @@
+.media-body{
+	margin-left: 20px;
+}
+
+.read-btn{
+	margin-top:10px;
+}
+
+.media-heading{
+	line-height: 30px;
+	font-weight: bold;
+}
+
+.skill-label{
+	margin: 0 auto;
+}
+
+
+.user-progress-menu{
+	display: block;
+}
+
+.friend-progress-menu{
+	display: none;
+}
+
+
+.media-heading{
+	font-weight: bold;
+}
+
+.progress-row{
+	margin-top: 20px;
+}
+
+.progress-circle{
+	margin-right: 20px;
+	float:left;
+}
+
+.progress-info{
+	margin-top: 30px;
+	float:left;
+}
+
+.text-hour{
+	float:left;
+	width: 60%;
+}
+
+.update-btn{
+	margin-left: 10px;
+}
+
+.skill-title{
+	margin-bottom: 20px;
+}
