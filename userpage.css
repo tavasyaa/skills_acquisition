@@ -1,5 +1,9 @@
-.navbar{
-	margin-bottom: 0;
+.media-body{
+	margin-left: 20px;
+}
+
+.post-info1{
+	float:left;
 }
 
 .posts-menu{
@@ -10,18 +14,29 @@
 	float:right;
 }
 
+.read-btn{
+	margin-top:10px;
+}
+
 .media-heading{
+	line-height: 30px;
 	font-weight: bold;
 }
 
-.progress-menu{
-	display: none;
+.skill-label{
+	margin: 0 auto;
+}
+
+
+.posts-menu{
+	margin-top: 20px;
+	display: block;
 }
 
 .messages-menu{
 	display: none;
 }
 
-.badge{
-	background-color: #007bff;
+.media-heading{
+	font-weight: bold;
 }
