@@ -24,6 +24,14 @@
         // document.getElementById("div7").style.display="none";
         // document.getElementById("div8").style.display="none";
     }
+    function changetext(){
+        document.getElementById("Unsubscribe").style.display="inline-block";
+        document.getElementById("subscribe").style.display="none";
+    }
+    function changeback(){
+        document.getElementById("subscribe").style.display="inline-block";
+        document.getElementById("Unsubscribe").style.display="none";
+    }
     </script>
 </head>
 
@@ -85,7 +93,8 @@
                     <h3>Laser Tag</h3>
                     <p><a href="#" class="btn btn-primary" role="button">Strategies</a>&nbsp;&nbsp;
                         <a href="#" class="btn btn-primary" role="button">Groups</a>&nbsp;&nbsp;
-                    <a href="#" class="btn btn-primary" role="button" data-toggle="modal" data-target="#myAlert">Subscribe</a> </p>
+                    <a id="Unsubscribe" href="#" class="btn btn-primary" onclick="changeback()" role="button" style="display: none;">Unsubscribe</a>
+                    <a id="subscribe" href="#" class="btn btn-primary" onclick="changetext()" role="button" data-toggle="modal" data-target="#myAlert">Subscribe</a></p>
                   </div>
                 </div>
               </div>
