@@ -46,6 +46,7 @@
 .text-hour{
 	float:left;
 	width: 60%;
+	margin-left: 25px;
 }
 
 .update-btn{
@@ -54,4 +55,44 @@
 
 .skill-title{
 	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+.hour-update-form{
+	margin: 20px auto;
+}
+
+.goal{
+	margin: 0 auto;
+	line-height: 1.2;
+}
+
+.goal-op{
+	font-size: 14px;
+	float:right;
+	color:#557c79;
+	background-color: #c6c5c5;
+	border-radius:15%;
+	padding: 2px 5px;
+	margin: auto 0;
+}
+
+.inputText {
+    height: 44px;
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 15px 0;
+}
+
+.form-btn {
+    float:right;
+    min-width: 102px;
+}
+
+.warning-message{
+	color:gray;
+}
+
+.label-warning{
+	color:white;
 }
