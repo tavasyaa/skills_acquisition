@@ -125,6 +125,7 @@ var config1 = {
 };
 
 var config2 =  JSON.parse(JSON.stringify(config1));
+config2.data.datasets[0].label = "Leather Working";
 config2.data.datasets[0].backgroundColor = "#5bc0de";
 config2.data.datasets[0].borderColor = "#5bc0de";
 config2.data.datasets[0].data = [0, 0, 1, 1, 1, 9];
