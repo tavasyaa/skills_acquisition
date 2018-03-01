@@ -185,7 +185,6 @@
             </p>
         </div>
 
-        <!-- 模态框（Modal） -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -193,30 +192,30 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                     &times;
                 </button>
-                <h4 class="modal-title" id="myModalLabel">
-                    Create a new skill
+                <h4 class="modal-title" id="myModalLabel" style="font-family: sans-serif; font-weight: bold; font-size: 24px;">
+                    Create Skill
                 </h4>
             </div>
             <div class="modal-body">
                 <div class="form-group">
-                    <label for="name">Skill Name:</label>
+                    <label for="name" style="font-family: sans-serif; font-weight: bold;">Skill Name:</label>
                     <input type="text" class="form-control" id="name" placeholder="">
                 </div>
                  <br>
                 <div class="form-group">
-                    <label for="name">Description:</label>
+                    <label for="name" style="font-family: sans-serif; font-weight: bold;">Description:</label>
                     <textarea class="form-control" rows="4"></textarea>
                 </div>
                 <input id="lefile" type="file" style="display:none">
-                <div class="input-append" style="display:none">
+                <div class="input-append" style="display:none;">
                     <input id="photoCover" type="text" class="form-control">
                     <a class="btn btn-primary" role="button" onclick="$('input[id=lefile]').click();">Browse</a>
                 </div>
                 <br>
                 <div class="form-group">
-                    <label for="name">Choose a picture as your cover:</label>
+                    <label for="name" style="font-family: sans-serif; font-weight: bold;">Choose file</label>
                     <div class="input-group input-file" name="Fichier1">
-                        <input type="text" class="form-control" placeholder='Choose a file...' />
+                        <input type="text" class="form-control" placeholder='Choose...' />
                         <span class="input-group-btn">
                         <button class="btn btn-default btn-choose" type="button" onclick="$('input[id=lefile]').click();">Choose</button>
                         </span>
@@ -224,11 +223,9 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">close
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close
                 </button>
-                <button type="button" class="btn btn-primary">
-                    submit
-                </button>
+                <a class="btn btn-primary" href="skills_list_after.html" role="button">Create Skill</a>
             </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal -->
@@ -241,7 +238,7 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                     &times;
                 </button>
-                <h4 class="modal-title" id="myModalLabel">
+                <h4 class="modal-title" id="myModalLabel" style="font-family: sans-serif; font-size: 24px;">
                     Message:
                 </h4>
             </div>
