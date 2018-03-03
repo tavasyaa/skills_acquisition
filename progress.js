@@ -27,8 +27,8 @@ var spentHour2 = parseInt($("#spentHour2").text());
 var remainHour2 = parseInt($("#remainHour2").text());
 var totalHour2 = spentHour2 + remainHour2;
 
-var currPer1 = "p66";
-var currPer2 = "p20";
+var currPer1 = "66";
+var currPer2 = "20";
 
 $("#update-btn1").click(function(){
 	var hourText = $("#text-hour1").val();
@@ -36,17 +36,28 @@ $("#update-btn1").click(function(){
 
 		hourText = parseInt(hourText)
 		config1.data.datasets[0].data[6] = hourText;
-		var newSpentHour = spentHour1+hourText;
-		$("#spentHour1").text(newSpentHour);
-		$("#remainHour1").text(remainHour1-hourText);
-		window.line1.update();
 
-		$("#progress-circle1").removeClass(currPer1);
-		currPer1 = Math.floor(newSpentHour/totalHour1*100);
-		$("#progress-circle1").addClass("p" + currPer1);
-		$("#percentage1").text(currPer1+"%");
+		updateDisplay1(hourText);
 	}	
 });
+
+function updateDisplay1(todayHour){
+    var newSpentHour = spentHour1+todayHour;
+    $("#spentHour1").text(newSpentHour);
+    $("#remainHour1").text(remainHour1-todayHour);
+    window.line1.update();
+
+    $("#progress-circle1").removeClass("p" + currPer1);
+    currPer1 = Math.floor(newSpentHour/totalHour1*100);
+    if(currPer1<50){
+        $("#progress-circle1").removeClass("over50");
+    } else{
+        $("#progress-circle1").addClass("over50");
+    }
+    $("#progress-circle1").addClass("p" + currPer1);
+    $("#percentage1").text(currPer1+"%");
+}
+
 
 $("#update-btn2").click(function(){
 	var hourText = $("#text-hour2").val();
@@ -64,6 +75,7 @@ $("#update-btn2").click(function(){
 		$("#percentage2").text(currPer2+"%");
 	}	
 });
+
 
 
 var MONTHS = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -113,6 +125,7 @@ var config1 = {
 };
 
 var config2 =  JSON.parse(JSON.stringify(config1));
+config2.data.datasets[0].label = "Leather Working";
 config2.data.datasets[0].backgroundColor = "#5bc0de";
 config2.data.datasets[0].borderColor = "#5bc0de";
 config2.data.datasets[0].data = [0, 0, 1, 1, 1, 9];
@@ -126,6 +139,20 @@ window.onload = function() {
     window.line2 = new Chart(ctx2, config2);
 };
 
-
-        
-        
+$("#update-goal-btn").click(function(){
+    var goalName = $("#goal-name").val();
+    var totalHour = $("#total-hour-goal").val();
+    if($.isNumeric(totalHour)==false || parseInt(totalHour) < 30){
+        alert("please enter a valid number of total hours, at least 30 hour");
+    } else {
+        $('#goal-setting-modal').modal('toggle');
+        totalHour1 = totalHour;
+        spentHour1 = 0;
+        remainHour1 = totalHour;
+        $("#progress-circle1").removeClass("p" + currPer1);
+        currPer1 = 0;
+        config1.data.datasets[0].data = [0, 0, 0, 0, 0, 0];
+        $("#goal1").text(goalName);
+        updateDisplay1(0);
+    }
+});

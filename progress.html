@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> Skill-It </title>
+	<title> Skill-It: My Skills </title>
 	<link rel="stylesheet" type="text/css" href="skills.css"/>
-  
+
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  
+
   <link rel="stylesheet" media="all" href="circular-prog-bar.css"/>
   <link rel="stylesheet" type="text/css" href="progress.css"/>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -23,11 +23,12 @@
 	    </div>
 	    <div class="collapse navbar-collapse">
 	        <div class="navbar-form navbar-right">
+	        	<a class="btn btn-primary" href="progress.html" role="button">My Progress</a>
 	            <a class="btn btn-info" href="userpage.html" role="button">Hey Chris!</a>
 	            <button type="button" class="btn btn-success" href="#">Logout</button>
 	        </div>
 	        <form class="navbar-form navbar-left">
-	          <a class="btn btn-default" href="skills_list.html?" role="button">All Skills/Groups</a>
+	          <a class="btn btn-primary" href="skills_list.html?" role="button">All Skills/Groups</a>
 	          <a href="#" data-toggle="modal" data-target="#exampleModalCenter"><span class="link-spanner"></span></a>
 	        </form>
 	    </div>
@@ -39,6 +40,28 @@
 	  </div>
 	</div>
 
+	 <div class="modal fade" id="goal-setting-modal" role="dialog">
+       <div class="modal-dialog " role="document">
+           <div class="modal-content">
+               <div class="modal-header">
+                 <button type="button" class="close" data-dismiss="modal">&times;</button>
+                 <h2 class="modal-title">Goal Setting</h2>
+               </div>
+
+               <div class="modal-body">
+                 <form action="#" class="modal-form">
+                   <input class = "form-control inputText" type="text" placeholder="Enter a new goal" id = "goal-name" name="goal-name" required>
+
+                   <input class = "form-control inputText" type="text" placeholder="Enter the estimated total hours to spend" id = "total-hour-goal" name="total-hour-goal" required>
+
+                   <button class="btn btn-primary form-btn" id="update-goal-btn" type="button">Submit</button>
+                   <p class="warning-message"><span class="label label-warning">Warning</span> this will reset your current progress</p>
+                 </form>
+           		</div>
+       		</div>
+   		</div>
+   	</div>
+
 	<div class="container">
 	  <ul class="nav nav-tabs">
 	  	<li role="presentation" class="active" id="user-progress-li"><a href="#" id="user-progress-a">My Progress</a></li>
@@ -46,16 +69,18 @@
 	  </ul>
 
 	  <div class="user-progress-menu">
-	  	
+
 	  	<div class="row progress-row">
 	        <div class="col-sm-6 col-md-4">
 	            <div class="thumbnail">
 	              <div class="caption">
-	                <h3 class="skill-title">Guitar Playing</h3>
-	                <form action="#">
-	                  <input type="text" class="form-control text-hour" placeholder="hours you spent today" id="text-hour1">
-	                  <button type ="button" class ="btn btn-primary update-btn" id="update-btn1"> Submit </button>
-	                </form>
+	                <h3 class="skill-title">Guitar Playing </h3>
+	                <h4 class="goal">Goal: <span id="goal1">Improve chord knowledge</span>
+	                	<div class = "goal-op">
+	                		<a href="#" data-target="#goal-setting-modal" data-toggle="modal"><i class="fa fa-cog" aria-hidden="true"></i> </a>
+	                		<a href="guitar.html"><i class="fa fa-share" aria-hidden="true"></i></a>
+	                	</div>
+	                </h4>
 	              </div>
 	              <div class="progress-"></div>
 	              <div id = "progress-circle1" class="progress-circle over50 p66">
@@ -70,6 +95,10 @@
 	                <p><span id = "remainHour1">68</span> more hours to master</p>
 	              </div>
 	            	<canvas id="lineChart1" width="40" height="40"></canvas>
+	            	<form class = "hour-update-form" action="#">
+	                  <input type="text" class="form-control text-hour" placeholder="hours you spent today" id="text-hour1">
+	                  <button type ="button" class ="btn btn-primary update-btn" id="update-btn1"> Submit </button>
+	                </form>
 	  			</div>
 			</div>
 
@@ -77,10 +106,13 @@
 	            <div class="thumbnail">
 	              <div class="caption">
 	                <h3 class="skill-title">Leather Working</h3>
-	                <form action="#">
-	                  <input type="text" class="form-control text-hour" placeholder="hours you spent today" id="text-hour2">
-	                  <button type ="button" class ="btn btn-primary update-btn" id="update-btn2"> Submit </button>
-	                </form>
+	                <h4 class="goal">Goal: <span id="goal2">Master basic skill</span>
+	                	<div class = "goal-op">
+	                		<a href="#"><i class="fa fa-cog" aria-hidden="true"></i> </a>
+	                		<a href="#"><i class="fa fa-share" aria-hidden="true"></i></a>
+	                	</div>
+
+	                </h4>
 	              </div>
 	              <div id = "progress-circle2" class="progress-circle p20">
 	                 <span id="percentage2">20%</span>
@@ -94,8 +126,12 @@
 	                <p><span  id = "remainHour2">60</span> more hours to master</p>
 	              </div>
 	              <canvas id="lineChart2" width="40" height="40"></canvas>
+	              <form class = "hour-update-form" action="#">
+	                  <input type="text" class="form-control text-hour" placeholder="hours you spent today" id="text-hour2">
+	                  <button type ="button" class ="btn btn-primary update-btn" id="update-btn2"> Submit </button>
+	                </form>
 	          	</div>
-	        </div> 
+	        </div>
 	  	</div>
 	  	</div>
 
@@ -103,7 +139,7 @@
 	    <ul class="list-group">
 	      <li class="list-group-item">
 	        <h4><i class="fa fa-trophy"></i> Michael has mastered fencing!</h4>
-	        08/27 - <a href="#">Michael</a> has been fencing for over fifty days, mastering over three techniques.
+	        08/27 - <a href="user_progress.html">Michael</a> has been fencing for over fifty days, mastering over three techniques.
 	      </li>
 
 	      <li class="list-group-item">
