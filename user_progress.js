@@ -1,6 +1,6 @@
 const form = document.querySelector('form.comment-update-form1');
 const ul = document.querySelector('p.input_comment');
-// const button = document.querySelector('button');
+// const button = document.querySelector('#button_submit');
 const input = document.getElementById('comment');
 let itemsArray = localStorage.getItem('items') ? JSON.parse(localStorage.getItem('items')) : [];
 
@@ -36,7 +36,7 @@ data.forEach(item => {
 
 const form1 = document.querySelector('form.comment-update-form2');
 const ul1 = document.querySelector('p.input_comment2');
-// const button1 = document.querySelector('button');
+// const button1 = document.querySelector('#button_submit2');
 const input1 = document.getElementById('comment2');
 let itemsArray1 = localStorage.getItem('items1') ? JSON.parse(localStorage.getItem('items1')) : [];
 
