@@ -77,9 +77,6 @@ h1.card-header {
   /* grid-column-gap: 10px; - if you want gap between the columns */
 }
 
-.middle {
-  padding: 10px;
-}
 
 /* Style the left column */
 /*.left {
@@ -93,11 +90,11 @@ h1.card-header {
   background-color:#0f3370;
   padding-left:10%;
   padding-right:10%;
-  min-height:550px;
+  min-height:645px;
 }
 
 .navbar {
-  margin-bottom: 0;
+  margin-bottom: 0px;
 }
 
 /* Style the right column */
@@ -109,9 +106,10 @@ h1.card-header {
 /* Style the footer */
 .footer {
   grid-area: footer;
-  background-color: white;
+  background-color: #0f3370;
   padding: 10px;
   text-align: center;
+  color:white;
 }
 
 .container{

@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title> Skill-It: My Skills </title>
-	<link rel="stylesheet" type="text/css" href="skills.css"/>
+	<!-- <link rel="stylesheet" type="text/css" href="skills.css"/> -->
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -34,11 +34,16 @@
 	    </div>
 	</nav>
 
-	<div class="jumbotron jumbotron-fluid">
+<!-- 	<div class="jumbotron jumbotron-fluid">
 	  <div class="container">
 	    <h1 class="display-4">My Skills</h1>
 	  </div>
-	</div>
+	</div> -->
+
+	<div class="header">
+        <h1 class="title-layouts">
+          <span class="fa fa-object-group" aria-hidden="true"></span>My Progress</h1>
+      </div>
 
 	 <div class="modal fade" id="goal-setting-modal" role="dialog">
        <div class="modal-dialog " role="document">
@@ -62,7 +67,8 @@
    		</div>
    	</div>
 
-	<div class="container">
+	<div class="middle">
+		<div class="img-thumbnail">
 	  <ul class="nav nav-tabs">
 	  	<li role="presentation" class="active" id="user-progress-li"><a href="#" id="user-progress-a">My Progress</a></li>
 	  	<li role="presentation" id="friend-progress-li"><a href="#" id="friend-progress-a">Friends' Progress</a></li>
@@ -94,7 +100,7 @@
 	                <p>You spent <span id = "spentHour1">132</span> hours</p>
 	                <p><span id = "remainHour1">68</span> more hours to master</p>
 	              </div>
-	            	<canvas id="lineChart1" width="40" height="40"></canvas>
+	            	<canvas id="lineChart1" width="40" height="30"></canvas>
 	            	<form class = "hour-update-form" action="#">
 	                  <input type="text" class="form-control text-hour" placeholder="hours you spent today" id="text-hour1">
 	                  <button type ="button" class ="btn btn-primary update-btn" id="update-btn1"> Submit </button>
@@ -125,7 +131,7 @@
 	                <p>You spent <span id = "spentHour2">15</span> hours</p>
 	                <p><span  id = "remainHour2">60</span> more hours to master</p>
 	              </div>
-	              <canvas id="lineChart2" width="40" height="40"></canvas>
+	              <canvas id="lineChart2" width="40" height="30"></canvas>
 	              <form class = "hour-update-form" action="#">
 	                  <input type="text" class="form-control text-hour" placeholder="hours you spent today" id="text-hour2">
 	                  <button type ="button" class ="btn btn-primary update-btn" id="update-btn2"> Submit </button>
@@ -136,6 +142,7 @@
 	  	</div>
 
 	  	<div class="friend-progress-menu">
+	  		<div class="media-body">
 	    <ul class="list-group">
 	      <li class="list-group-item">
 	        <h4><i class="fa fa-trophy"></i> Michael has mastered fencing!</h4>
@@ -144,7 +151,7 @@
 
 	      <li class="list-group-item">
 	        <h4><i class="fa fa-star-half"></i> Greg started baking today!!</h4>
-	        <a href="#"> Click here </a> to view <a href="#">Greg</a>'s recently baked cupcake!</p>
+	        <a href="#"> Click here </a> to view <a href="#">Greg</a>'s recently baked cupcake!
 	      </li>
 
 	      <li class="list-group-item">
@@ -164,10 +171,15 @@
 	    </ul>
 	  	</div>
   	</div>
+  </div>
+</div>
+
+  <div class="footer">
   	<div class="copyright text-center">
   		<p>© 2018 Skill list All rights reserved | Design by NU students
   		</p>
 	</div>
+</div>
 
 	<script type="text/javascript" src="progress.js"></script>
 </body>
