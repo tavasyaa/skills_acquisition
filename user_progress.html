@@ -1,215 +1,182 @@
 <!DOCTYPE html>
 <html>
-<!-- Head -->
-
 <head>
-    <title>User Progress</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <link rel="stylesheet" href="css/font-awesome.css" type="text/css" media="all">
+    <title> Skill-It: My Skills </title>
+    <link rel="stylesheet" type="text/css" href="skills.css"/>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
-    <script type="text/javascript">
-    function search()
-    {
-        // var srch=document.getElementById("searchtext").value;
-        document.getElementById("div1").style.display="none";
-        document.getElementById("div2").style.display="none";
-        document.getElementById("div3").style.display="none";
-        // document.getElementById("div4").style.display="none";
-        // document.getElementById("div5").style.display="none";
-        // document.getElementById("div6").style.display="none";
-        // document.getElementById("div7").style.display="none";
-        // document.getElementById("div8").style.display="none";
-    }
-    </script>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" media="all" href="circular-prog-bar.css"/>
+  <link rel="stylesheet" type="text/css" href="progress.css"/>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+
 </head>
-
-
-
 <body>
     <nav class="navbar navbar-default">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="homepage.html">Skill-It</a>
-            </div>
-            <div class="collapse navbar-collapse">
-                <div class="navbar-form navbar-right">
-                    <a class="btn btn-primary" href="progress.html" role="button">My Progress</a>
-                    <a class="btn btn-info" href="userpage.html" role="button">Hey Chris!</a>
-                    <button type="button" class="btn btn-success" href="#">Logout</button>
-                </div>
-                <form class="navbar-form navbar-left">
-                  <a class="btn btn-primary" href="skills_list.html" role="button">All Skills/Groups</a>
-                </form>
-                <!-- <div class="navbar-form navbar-left">
-                    <button class="btn btn-default" data-toggle="modal" data-target="#myModal">
-                        Add new skill
-                    </button>
-                </div>
-                <form action="#" type="post" class="navbar-form navbar-left" role="search">
-                    <div class="form-group">
-                        <input id="searchtext" type="text" class="form-control" placeholder="Search">
-                    </div>
-                    &nbsp;&nbsp;
-                    <button class="btn btn-default" type="submit" onclick="search()">Go</button>
-                </form> -->
-            </div>
-        </nav>
-    <div class="banner">
-        <div class="banner-layer">
-            <h1 class="title-layouts">
-                <span class="fa fa-object-group" aria-hidden="true"></span>Michael's Progress</h1>
+        <div class="navbar-header">
+            <a class="navbar-brand" href="homepage.html">Skill-It</a>
         </div>
-        <div class="wthreeproductdisplay">
-            <div class="row">
-              <div id="div1" class="col-sm-6 col-md-6" style="text-align: center;">
-                <div class="thumbnail">
-                  <div class="caption">
-                    <h3>Laser Tag</h3>
-                  </div>
-                  <img src="images/progresstime.jpg" alt="img">
-                  <br>
-                  <h4>Michael spent 4 hours to learn laser tag last week.</h4>
-                  <h4>Michael skill move from good to excellent.</h4>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                        60%
-                    </div>
-                 </div>
-                </div>
-              </div>
-              <div id="div2" class="col-sm-6 col-md-6" style="text-align: center;">
-                <div id="Cooking Entry" class="thumbnail">
-                  <div class="caption">
-                    <h3>Cooking Entry</h3>
-                    <!-- <p><a href="#" class="btn btn-primary" role="button">Strategies</a>&nbsp;&nbsp;
-                        <a href="#" class="btn btn-primary" role="button">Groups</a>&nbsp;&nbsp;
-                    <a href="#" class="btn btn-primary" role="button" data-toggle="modal" data-target="#myAlert">Subscribe</a> </p> -->
-                  </div>
-                  <img src="images/progressline.png" alt="img">
-                  <br>
-                  <h4>Michael spent 6 hours to learn cooking last week.</h4>
-                  <h4>Michael now mastered 20 dishes in total.</h4>
-                  <div class="progress">
-                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
-                        80%
-                    </div>
-                 </div>
-                </div>
-              </div>
+        <div class="collapse navbar-collapse">
+            <div class="navbar-form navbar-right">
+                <a class="btn btn-primary" href="progress.html" role="button">My Progress</a>
+                <a class="btn btn-info" href="userpage.html" role="button">Hey Chris!</a>
+                <button type="button" class="btn btn-success" href="#">Logout</button>
             </div>
-            <div class="row">
-              <div id="div3" class="col-sm-6 col-md-6">
-                <div class="thumbnail">
-                  <img src="images/d8.jpg" alt="img">
-                  <div class="caption">
-                    <h3>Piano (mid-level)</h3>
-                    <p><a href="#" class="btn btn-primary" role="button">Strategies</a>&nbsp;&nbsp;
-                        <a href="#" class="btn btn-primary" role="button">Groups</a>&nbsp;&nbsp;
-                    <a href="#" class="btn btn-primary" role="button" data-toggle="modal" data-target="#myAlert">Subscribe</a> </p>
-                  </div>
-                </div>
-              </div>
-              <div id="div4" class="col-sm-6 col-md-6">
-                <div class="thumbnail">
-                  <img src="images/d4.jpeg" alt="img">
-                  <div class="caption">
-                    <h3>Work Out Tips</h3>
-                    <p><a href="#" class="btn btn-primary" role="button">Strategies</a>&nbsp;&nbsp;
-                        <a href="#" class="btn btn-primary" role="button">Groups</a>&nbsp;&nbsp;
-                    <a href="#" class="btn btn-primary" role="button" data-toggle="modal" data-target="#myAlert">Subscribe</a> </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-        </div>
-    <!-- //cart's-Product-Display -->
-        <!-- <div class="wthreecartaits wthreecartaits2 cart cart box_1">
-            <form action="#" method="post" class="last">
-                <button class="w3view-cart" type="submit" name="submit" value="">back to top
-                    <span class="fa fa-object-group" aria-hidden="true"></span>
-                </button>
+            <form class="navbar-form navbar-left">
+              <a class="btn btn-primary" href="skills_list.html?" role="button">All Skills/Groups</a>
+              <a href="#" data-toggle="modal" data-target="#exampleModalCenter"><span class="link-spanner"></span></a>
             </form>
-        </div> -->
-        <div class="copyright text-center">
-            <p>© 2018 Skill list All rights reserved | Design by NU students
-            </p>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Michael's Progress</h1>
+      </div>
+    </div>
+
+     <div class="modal fade" id="goal-setting-modal" role="dialog">
+       <div class="modal-dialog " role="document">
+           <div class="modal-content">
+               <div class="modal-header">
+                 <button type="button" class="close" data-dismiss="modal">&times;</button>
+                 <h2 class="modal-title">Goal Setting</h2>
+               </div>
+
+               <div class="modal-body">
+                 <form action="#" class="modal-form">
+                   <input class = "form-control inputText" type="text" placeholder="Enter a new goal" id = "goal-name" name="goal-name" required>
+
+                   <input class = "form-control inputText" type="text" placeholder="Enter the estimated total hours to spend" id = "total-hour-goal" name="total-hour-goal" required>
+
+                   <button class="btn btn-primary form-btn" id="update-goal-btn" type="button">Submit</button>
+                   <p class="warning-message"><span class="label label-warning">Warning</span> this will reset your current progress</p>
+                 </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+      <!-- <ul class="nav nav-tabs">
+        <li role="presentation" class="active" id="user-progress-li"><a href="#" id="user-progress-a">My Progress</a></li>
+        <li role="presentation" id="friend-progress-li"><a href="#" id="friend-progress-a">Friends' Progress</a></li>
+      </ul> -->
+
+      <div class="user-progress-menu">
+
+        <div class="row progress-row">
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                  <div class="caption">
+                    <h3 class="skill-title">Guitar Playing </h3>
+                    <h4 class="goal">Goal: <span id="goal1">Improve chord knowledge</span>
+                        <div class = "goal-op">
+                            <a href="#" data-target="#goal-setting-modal" data-toggle="modal"><i class="fa fa-cog" aria-hidden="true"></i> </a>
+                            <a href="guitar.html"><i class="fa fa-share" aria-hidden="true"></i></a>
+                        </div>
+                    </h4>
+                  </div>
+                  <div class="progress-"></div>
+                  <div id = "progress-circle1" class="progress-circle over50 p66">
+                     <span id="percentage1">66%</span>
+                     <div class="left-half-clipper">
+                        <div class="first50-bar"></div>
+                        <div class="value-bar"></div>
+                     </div>
+                  </div>
+                  <div class="progress-info">
+                    <p>He spent <span id = "spentHour1">132</span> hours</p>
+                    <p><span id = "remainHour1">68</span> more hours to master</p>
+                  </div>
+                    <canvas id="lineChart1" width="40" height="40"></canvas>
+                    <form class = "hour-update-form" action="#">
+                      <p style="margin-left: 20px;">Chris said: Good job, Michael!</p>
+                      <p style="margin-left: 20px;">Mary said: Fantastic, Michael! You should play next time.</p>
+                      <!-- <input type="text" class="form-control text-hour" placeholder="hours you spent today" id="text-hour1">
+                      <button type ="button" class ="btn btn-primary update-btn" id="update-btn1"> Submit </button> -->
+                      <input type="text" class="form-control text-hour" placeholder="Enter your comment here" id="comment">
+                      <button type ="button" class ="btn btn-primary update-btn" id="comment_submit"> Submit </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                  <div class="caption">
+                    <h3 class="skill-title">Leather Working</h3>
+                    <h4 class="goal">Goal: <span id="goal2">Master basic skill</span>
+                        <div class = "goal-op">
+                            <a href="#"><i class="fa fa-cog" aria-hidden="true"></i> </a>
+                            <a href="#"><i class="fa fa-share" aria-hidden="true"></i></a>
+                        </div>
+
+                    </h4>
+                  </div>
+                  <div id = "progress-circle2" class="progress-circle p20">
+                     <span id="percentage2">20%</span>
+                     <div class="left-half-clipper">
+                        <div class="first50-bar"></div>
+                        <div class="value-bar"></div>
+                     </div>
+                  </div>
+                  <div class="progress-info">
+                    <p>He spent <span id = "spentHour2">15</span> hours</p>
+                    <p><span  id = "remainHour2">60</span> more hours to master</p>
+                  </div>
+                  <canvas id="lineChart2" width="40" height="40"></canvas>
+                  <form class = "hour-update-form" action="#">
+                     <!--  <input type="text" class="form-control text-hour" placeholder="hours you spent today" id="text-hour2">
+                      <button type ="button" class ="btn btn-primary update-btn" id="update-btn2"> Submit </button>
+ -->                  <p style="margin-left: 20px;">John said: Good job, Michael!</p>
+                      <p style="margin-left: 20px;">Susan said: Fantastic, Michael! You should play next time.</p>
+                      <input type="text" class="form-control text-hour" placeholder="Enter your comment here" id="comment">
+                      <button type ="button" class ="btn btn-primary update-btn" id="comment_submit"> Submit </button>
+                    </form>
+                </div>
+            </div>
+        </div>
         </div>
 
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                    &times;
-                </button>
-                <h4 class="modal-title" id="myModalLabel" style="font-family: sans-serif; font-weight: bold; font-size: 24px;">
-                    Create Skill
-                </h4>
-            </div>
-            <div class="modal-body">
-                <div class="form-group">
-                    <label for="name" style="font-family: sans-serif; font-weight: bold;">Skill Name:</label>
-                    <input type="text" class="form-control" id="name" placeholder="">
-                </div>
-                 <br>
-                <div class="form-group">
-                    <label for="name" style="font-family: sans-serif; font-weight: bold;">Description:</label>
-                    <textarea class="form-control" rows="4"></textarea>
-                </div>
-                <input id="lefile" type="file" style="display:none">
-                <div class="input-append" style="display:none;">
-                    <input id="photoCover" type="text" class="form-control">
-                    <a class="btn btn-primary" role="button" onclick="$('input[id=lefile]').click();">Browse</a>
-                </div>
-                <br>
-                <div class="form-group">
-                    <label for="name" style="font-family: sans-serif; font-weight: bold;">Choose file</label>
-                    <div class="input-group input-file" name="Fichier1">
-                        <input type="text" class="form-control" placeholder='Choose...' />
-                        <span class="input-group-btn">
-                        <button class="btn btn-default btn-choose" type="button" onclick="$('input[id=lefile]').click();">Choose</button>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close
-                </button>
-                <a class="btn btn-primary" href="skills_list_after.html" role="button">Create Skill</a>
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal -->
-</div>
+        <!-- <div class="friend-progress-menu">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <h4><i class="fa fa-trophy"></i> Michael has mastered fencing!</h4>
+            08/27 - <a href="user_progress.html">Michael</a> has been fencing for over fifty days, mastering over three techniques.
+          </li>
 
-<div class="modal fade" id="myAlert" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                    &times;
-                </button>
-                <h4 class="modal-title" id="myModalLabel" style="font-family: sans-serif; font-size: 24px;">
-                    Message:
-                </h4>
-            </div>
-            <div class="modal-body">
-                <h4 class="modal-title" id="myModalLabel" style="font-family: sans-serif; text-align: center;">
-                    Congratulations! You subscribed the skill!
-                </h4>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close
-                </button>
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal -->
-</div>
+          <li class="list-group-item">
+            <h4><i class="fa fa-star-half"></i> Greg started baking today!!</h4>
+            <a href="#"> Click here </a> to view <a href="#">Greg</a>'s recently baked cupcake!</p>
+          </li>
 
+          <li class="list-group-item">
+            <h4><i class="fa fa-trophy"></i> Join Matt at honing soccer skills</h4>
+            Want to learn how to dribble like Neymar? Ask <a href="#">Matt</a>, who's handling the dribbling skill well!
+          </li>
+
+          <li class="list-group-item">
+            <h4><i class="fa fa-star"></i> Want to learn to play the violin? Talk to Julia</h4>
+            Listen to some soothing Chopin as <a href="#">Julia</a> truly excels.
+          </li>
+
+          <li class="list-group-item">
+            <h4><i class="fa fa-trophy"></i> Hit a hole in one with Freddy</h4>
+            We're very impressed with <a href="#">Freddy</a>, is he the next Tiger Woods?
+          </li>
+        </ul>
+        </div> -->
     </div>
-</body>
-<!-- //Body -->
+    <div class="copyright text-center">
+        <p>© 2018 Skill list All rights reserved | Design by NU students
+        </p>
+    </div>
 
+    <script type="text/javascript" src="progress.js"></script>
+</body>
 </html>
