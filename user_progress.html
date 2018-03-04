@@ -34,12 +34,6 @@
         </div>
     </nav>
 
-<!--    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4">My Skills</h1>
-      </div>
-    </div> -->
-
     <div class="header">
         <h1 class="title-layouts">
           <span class="fa fa-object-group" aria-hidden="true"></span>Michael's Progress</h1>
@@ -68,7 +62,7 @@
     </div>
 
     <div class="middle">
-        <div class="img-thumbnail">
+      <!-- <div class="img-thumbnail"> -->
 
       <div class="user-progress-menu">
 
@@ -96,10 +90,16 @@
                     <p>He spent <span id = "spentHour1">132</span> hours</p>
                     <p><span id = "remainHour1">68</span> more hours to master</p>
                   </div>
-                    <canvas id="lineChart1" width="40" height="30"></canvas>
-                    <form class = "hour-update-form" action="#">
-                      <p style="margin-left: 20px;">Chris said: Good job, Michael!</p>
-                      <p style="margin-left: 20px;">Mary said: Fantastic, Michael! You should play next time.</p>
+
+                    <canvas id="lineChart1" width="40" height="25"></canvas>
+                      <div class="thumbnail chat">
+                      <div class="container">
+                      <p><b>Chris:</b> Good job, Michael!</p>
+                      <p><b>Mary:</b> Fantastic, Michael! You should play next time.</p>
+                    </div>
+                  </div>
+                      <form class = "hour-update-form" action="#">
+
                       <input type="text" class="form-control text-hour" placeholder="Enter your comment here" id="comment">
                       <button type ="button" class ="btn btn-primary update-btn" id="comment_submit"> Submit </button>
                     </form>
@@ -129,10 +129,15 @@
                     <p>He spent <span id = "spentHour2">15</span> hours</p>
                     <p><span  id = "remainHour2">60</span> more hours to master</p>
                   </div>
-                  <canvas id="lineChart2" width="40" height="30"></canvas>
-                  <form class = "hour-update-form" action="#">
-                      <p style="margin-left: 20px;">John said: Good job, Michael!</p>
-                      <p style="margin-left: 20px;">Susan said: Fantastic, Michael! You should play next time.</p>
+
+                  <canvas id="lineChart2" width="40" height="25"></canvas>
+                      <div class="thumbnail chat">
+                      <div class="container">
+                      <p><b>John:</b> Good job, Michael!</p>
+                      <p><b>Susan:</b> Fantastic, Michael! You should sell your craftwork!</p>
+                    </div>
+                  </div>
+                      <form class = "hour-update-form" action="#">
                       <input type="text" class="form-control text-hour" placeholder="Enter your comment here" id="comment">
                       <button type ="button" class ="btn btn-primary update-btn" id="comment_submit"> Submit </button>
                     </form>
@@ -141,15 +146,15 @@
         </div>
      </div>
   </div>
-</div>
+  <!-- </div> -->
+    <div class="footer">
 
-  <div class="footer">
     <div class="copyright text-center">
         <p>@2018 Skill list All rights reserved | Design by NU students
         </p>
     </div>
-</div>
 
+</div>
     <script type="text/javascript" src="progress.js"></script>
 </body>
 </html>
