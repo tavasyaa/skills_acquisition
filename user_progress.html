@@ -94,13 +94,14 @@
                     <canvas id="lineChart1" width="40" height="25"></canvas>
                       <div class="thumbnail chat">
                       <div class="container">
+                      <p class="input_comment"></p>
                       <p><b>Chris:</b> Good job, Michael!</p>
                       <p><b>Mary:</b> Fantastic, Michael! You should play next time.</p>
                     </div>
                   </div>
-                      <form class = "hour-update-form" action="#">
+                      <form class = "comment-update-form1" action="#">
 
-                      <input type="text" class="form-control text-hour" placeholder="Enter your comment here" id="comment">
+                      <input type="text" class="form-control text-hour" placeholder="Enter your comment here" id="comment" required>
                       <button type ="button" class ="btn btn-primary update-btn" id="comment_submit"> Submit </button>
                     </form>
                 </div>
@@ -133,12 +134,13 @@
                   <canvas id="lineChart2" width="40" height="25"></canvas>
                       <div class="thumbnail chat">
                       <div class="container">
+                      <p class="input_comment2"></p>
                       <p><b>John:</b> Good job, Michael!</p>
                       <p><b>Susan:</b> Fantastic, Michael! You should sell your craftwork!</p>
                     </div>
                   </div>
-                      <form class = "hour-update-form" action="#">
-                      <input type="text" class="form-control text-hour" placeholder="Enter your comment here" id="comment">
+                      <form class = "comment-update-form2" action="#">
+                      <input type="text" class="form-control text-hour" placeholder="Enter your comment here" id="comment2" required>
                       <button type ="button" class ="btn btn-primary update-btn" id="comment_submit"> Submit </button>
                     </form>
                 </div>
@@ -156,5 +158,6 @@
 
 </div>
     <script type="text/javascript" src="progress.js"></script>
+    <script type="text/javascript" src="user_progress.js"></script>
 </body>
 </html>
