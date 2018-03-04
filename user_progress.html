@@ -34,11 +34,16 @@
         </div>
     </nav>
 
-    <div class="jumbotron jumbotron-fluid">
+    <!-- <div class="jumbotron jumbotron-fluid">
       <div class="container">
         <h1 class="display-4">Michael's Progress</h1>
       </div>
-    </div>
+    </div> -->
+
+    <div class="header">
+        <h1 class="title-layouts">
+          <span class="fa fa-object-group" aria-hidden="true"></span>Michael's Progress</h1>
+      </div>
 
      <div class="modal fade" id="goal-setting-modal" role="dialog">
        <div class="modal-dialog " role="document">
@@ -62,7 +67,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="middle">
       <!-- <ul class="nav nav-tabs">
         <li role="presentation" class="active" id="user-progress-li"><a href="#" id="user-progress-a">My Progress</a></li>
         <li role="presentation" id="friend-progress-li"><a href="#" id="friend-progress-a">Friends' Progress</a></li>
@@ -94,12 +99,16 @@
                     <p>He spent <span id = "spentHour1">132</span> hours</p>
                     <p><span id = "remainHour1">68</span> more hours to master</p>
                   </div>
-                    <canvas id="lineChart1" width="40" height="40"></canvas>
-                    <form class = "hour-update-form" action="#">
-                      <p style="margin-left: 20px;">Chris said: Good job, Michael!</p>
-                      <p style="margin-left: 20px;">Mary said: Fantastic, Michael! You should play next time.</p>
+                    <canvas id="lineChart1" width="40" height="25"></canvas>
+                      <div class="thumbnail">
+                      <div class="container">
+                      <p><b>Chris:</b> Good job, Michael!</p>
+                      <p><b>Mary:</b> Fantastic, Michael! You should play next time.</p>
+                    </div>
+                  </div>
                       <!-- <input type="text" class="form-control text-hour" placeholder="hours you spent today" id="text-hour1">
                       <button type ="button" class ="btn btn-primary update-btn" id="update-btn1"> Submit </button> -->
+                      <form class = "hour-update-form" action="#">
                       <input type="text" class="form-control text-hour" placeholder="Enter your comment here" id="comment">
                       <button type ="button" class ="btn btn-primary update-btn" id="comment_submit"> Submit </button>
                     </form>
@@ -129,12 +138,19 @@
                     <p>He spent <span id = "spentHour2">15</span> hours</p>
                     <p><span  id = "remainHour2">60</span> more hours to master</p>
                   </div>
-                  <canvas id="lineChart2" width="40" height="40"></canvas>
-                  <form class = "hour-update-form" action="#">
+                  <canvas id="lineChart2" width="40" height="25"></canvas>
+
                      <!--  <input type="text" class="form-control text-hour" placeholder="hours you spent today" id="text-hour2">
                       <button type ="button" class ="btn btn-primary update-btn" id="update-btn2"> Submit </button>
- -->                  <p style="margin-left: 20px;">John said: Good job, Michael!</p>
-                      <p style="margin-left: 20px;">Susan said: Fantastic, Michael! You should play next time.</p>
+
+ -->
+                      <div class=thumbnail>
+                      <div class="container">
+                      <p><b>John:</b> Good job, Michael!</p>
+                      <p><b>Susan:</b> Fantastic, Michael! You should sell your craftwork!</p>
+                    </div>
+                  </div>
+                      <form class = "hour-update-form" action="#">
                       <input type="text" class="form-control text-hour" placeholder="Enter your comment here" id="comment">
                       <button type ="button" class ="btn btn-primary update-btn" id="comment_submit"> Submit </button>
                     </form>
@@ -172,10 +188,12 @@
         </ul>
         </div> -->
     </div>
+    <div class="footer">
     <div class="copyright text-center">
         <p>© 2018 Skill list All rights reserved | Design by NU students
         </p>
     </div>
+  </div>
 
     <script type="text/javascript" src="progress.js"></script>
 </body>
