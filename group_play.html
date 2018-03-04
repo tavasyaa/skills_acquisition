@@ -17,13 +17,13 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="btn btn-primary" href="skills_list.html" role="button">All Skills/Groups</a>&#160; &#160;
+        <a class="btn btn-primary allskills" href="skills_list.html" role="button">All Skills/Groups</a>&#160; &#160;
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <a class="btn btn-primary" href="progress.html" role="button">My Progress</a>&#160; &#160;
-    <a class="btn btn-info" href="userpage.html" role="button">Hey Chris!</a>&#160; &#160;
-      <button class="btn btn-success my-2 my-sm-0" type="submit">Log Out</button>
+      <a class="btn btn-primary allskills myprog" href="progress.html" role="button">My Progress</a>&#160; &#160;
+    <a class="btn btn-info heychris" href="userpage.html" role="button">Hey Chris!</a>&#160; &#160;
+      <button class="btn btn-success my-2 my-sm-0 logout" type="submit">Logout</button>
     </form>
   </div>
 </nav>
@@ -47,14 +47,14 @@
     <span class="badge badge-primary badge-pill"></span>
   </li>
   <li class="list-group-item list-group-item-info d-flex justify-content-between align-items-center">
-    Group Play   <!-- <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal2">  <img src="images/info.png" class="infobutton"></button> -->
-    <a data-toggle="modal" data-target="#modal2"><img src="images/info.png" class="infobutton"></a>
+ 
+    <a data-toggle="modal" data-target="#modal2"><img src="images/info.png" class="infobutton" onmouseover="" style="cursor: pointer;"></a>
+    <div class="groupplayname">Group Play </div>
 
 
 
 
-
-    <span class="badge badge-primary badge-pill">0</span>
+    <span class="badge badge-primary badge-pill">5</span>
   </li>
   </li>
   <li class="list-group-item d-flex justify-content-between align-items-center groupsjoined" id="secondlisting">
@@ -67,7 +67,7 @@
   </li>
   <li class="list-group-item d-flex justify-content-between align-items-center groupsjoined">
     Classical Music Recommendations
-    <span class="badge badge-primary badge-pill">1</span>
+    <span class="badge badge-primary badge-pill"></span>
   </li>
    <li class="list-group-item d-flex justify-content-between align-items-center groupsjoined">
     Strumming patterns
@@ -89,7 +89,7 @@
     The Annual Wake Street Show
     <span class="badge badge-primary badge-pill">Join Group</span>
   </li>
-     <li class="list-group-item d-flex justify-content-between align-items-center">
+     <li class="list-group-item d-flex justify-content-between align-items-center" id="lastvisiblegroup">
     Anyone wanna watch Green Day?
     <span class="badge badge-primary badge-pill">Join Group</span>
   </li>
@@ -119,19 +119,31 @@
     bob1324: Let's play this Saturday at 5?
   </div>
 </div>
-  	<div class="card chatitem">
+<div class="card chatitem">
   <div class="card-body">
     mechwiz: Oh yea that works for me!
   </div>
 </div>
+<div class="card chatitem">
+  <div class="card-body" id="chat-1">
   </div>
+</div>
+<div class="card chatitem">
+  <div class="card-body">
+  </div>
+</div>
+<div class="card chatitem">
+  <div class="card-body">
+  </div>
+</div>
+</div>
 </div>
 <br/>
 <br/>
 <br/>
 <br/>
 <div class="copyright text-center">
-        <p>© 2018 Skill list All rights reserved | Design by NU students
+        <p class="groupplayfooter">© 2018 Skill list All rights reserved | Design by NU students
         </p>
 
 </div>
@@ -149,12 +161,12 @@
         </button>
       </div>
       <div class="modal-body">
-        &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Name: <input type="text" name="name"><br><br>
+        &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Name: <input type="text" name="name" id="name"><br><br>
         Description: <input type="text" name="description"><br>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>&#160; &#160;
-        <button type="button" class="btn btn-primary">Save</button>
+        <button type="button" class="btn btn-primary" onclick = "savegroup()" data-dismiss="modal">Save</button>
       </div>
     </div>
   </div>
@@ -174,7 +186,7 @@
         Members: <br>
         Jo<br>
         Allan<br>
-        Abhi<br>
+        <a href="user_progress.html">Michael</a><br>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -182,6 +194,7 @@
     </div>
   </div>
 </div>
+
 </body>
 <script src="group_play.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

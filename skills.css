@@ -16,6 +16,38 @@
 	top: 10px;
 }
 
+.navbar {
+	height: 52px;
+}
+
+.navbar-brand {
+	color: grey !important;
+	font-size: 18px !important;
+}
+
+.allskills {
+	background-color: #1F618D !important;
+	font-size: 14px !important;
+	position: relative;
+	right: -9px;
+}
+
+.myprog {
+	position: relative;
+	right: -18px;
+}
+
+.heychris {
+	background-color: #5DADE2 !important;
+	font-size: 14px !important;
+	position: relative;
+	right: -9px;
+}
+
+.logout {
+	font-size: 14px !important;
+}
+
 .card {
 	max-width: 735px;
 	position: relative;
@@ -39,7 +71,7 @@
 	float: right;
 	position: relative;
 	top: 570px;
-	left: 3px;
+	left: 11px;
 }
 
 .searchpic {
@@ -54,12 +86,6 @@
 .infobutton {
 	width: 30px;
 	height: 30px;
-	position: relative;
-	left: -105px;
-}
-
-.groupsjoined {
-	background-color: #98FB98 !important;
 }
 
 .chatitem {
@@ -82,4 +108,11 @@
 	padding-right: 10%;
 }
 
+.groupplayname {
+	position: relative;
+	left: -100px;
+}
 
+.groupplayfooter {
+	color: white;
+}
