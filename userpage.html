@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title> Skill-It </title>
-	<link rel="stylesheet" type="text/css" href="skills.css"/>
+	<!-- <link rel="stylesheet" type="text/css" href="skills.css"/> -->
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
@@ -11,6 +11,7 @@
 
   <link rel="stylesheet" media="all" href="circular-prog-bar.css"/>
   <link rel="stylesheet" type="text/css" href="userpage.css"/>
+
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
@@ -34,15 +35,20 @@
             </div>
         </nav>
 
-<div class="jumbotron jumbotron-fluid">
+<!-- <div class="jumbotron jumbotron-fluid">
   <div class="container">
     <h1 class="display-4">My Page</h1>
   </div>
-</div>
+</div> -->
 
+<div class="header">
+        <h1 class="title-layouts">
+          <span class="fa fa-object-group" aria-hidden="true"></span>My Page</h1>
+      </div>
 
-
-<div class="container">
+<div class="middle">
+  <div class="img-thumbnail">
+  <!-- <div class="container"> -->
   <ul class="nav nav-tabs">
     <li class="active" role="presentation" id="posts-li"><a href="#" id="posts-a">Trending Posts</a></li>
     <li role="presentation" id="messages-li"><a href="#" id="messages-a">Messages</a></li>
@@ -63,11 +69,11 @@
         <p>
           I'd definetely recommend the <a href="https://itunes.apple.com/us/app/all-guitar-chords/id416947605?mt=8">All Chords</a> and <a href="https://itunes.apple.com/us/app/ultimate-guitar-chords-tabs/id357828853?mt=8">Tabs&Chords</a> apps to any beginners out there. The first one helps teach you fingering for all kinds of chords and the second one is great for getting the chords or tabs for tons of songs!
           <br>
-          <button type="button" class="btn btn-primary btn-sm read-btn" href="#">Read more</button>
+          <a class="btn btn-primary btn-sm read-btn" href="guitarpost.html" role="button">Read More</a>
         </p>
           <div class="post-info1">
-            <i class="glyphicon glyphicon-comment"></i> <a href="#">655 Comments</a>
-            | <i class="glyphicon glyphicon-thumbs-up"></i> <a href="#">1417 Likes</a>
+            <i class="glyphicon glyphicon-comment"></i> <a href="#">3 Comments</a>
+            | <i class="glyphicon glyphicon-thumbs-up"></i> <a href="#">4 Likes</a>
           </div>
           <div class="post-info2">
             <i class="glyphicon glyphicon-user"></i> by <a href="#">John</a>
@@ -132,7 +138,13 @@
 
 
   <div class="messages-menu">
+    <div class="media-body">
     <div class="list-group">
+      <a class="list-group-item" href="group_play.html" role="button">
+        Strumming patterns
+        <span class="badge badge-primary badge-pill">14</span>
+      </a>
+
       <button class="list-group-item" type="button">
         Fencing
         <span class="badge badge-primary badge-pill">14</span>
@@ -179,20 +191,21 @@
       </button>
 
     </div>
-
+</div>
   </div>
-
+</div>
 
     </div>
 
-  </div>
+  <!-- </div> -->
 
 
 
-
+<div class="footer">
 <div class="copyright text-center">
   <p>© 2018 Skill list All rights reserved | Design by NU students
   </p>
+</div>
 </div>
 
 <script type="text/javascript" src="userpage.js"></script>
