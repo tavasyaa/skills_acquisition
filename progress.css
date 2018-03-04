@@ -131,6 +131,7 @@ body {
 
 .img-thumbnail {
   padding:20px;
+  max-width:inherit;
 }
 
 .container{
@@ -140,7 +141,7 @@ body {
     width:inherit;
 }
 
-.thumbnail {
+.thumbnail .chat {
 	margin-left:20px;
 	margin-right:20px;
 }
