@@ -23,10 +23,12 @@
             </div>
 
             <div class="collapse navbar-collapse" id="collapse-part">
-               <ul class="nav navbar-nav navbar-right">
-                   <li><a href="" data-toggle="modal" data-target="#signUpModal" class="userBtn">Sign up <i class="fa fa-user-plus" aria-hidden="true"></i></a></li>
-                   <li><a href="" data-toggle="modal" data-target="#logInModal" class="userBtn">Login <i class="fa fa-user" aria-hidden="true"></i></a></li>
-               </ul>
+               <div class="nav navbar-form navbar-right">
+                   <a href="" data-toggle="modal" data-target="#signUpModal" class="userBtn btn btn-info" role="button">Sign up <i class="fa fa-user-plus" aria-hidden="true"></i>
+                   </a>
+                   <a href="" data-toggle="modal" data-target="#logInModal" class="userBtn btn btn-success" role="button">Login <i class="fa fa-user" aria-hidden="true"></i>
+                   </a>
+               </div>
             </div>
         </nav>
 
@@ -56,16 +58,17 @@
                    <p>Please fill in this form to create an account.</p>
                  </div>
                  <div class="modal-body">
-                   <form class="modal-form">
+                   <form id="signUp-info-form">
                       <input class = "form-control inputText" type="text" placeholder="Enter Username" name="username" required>
 
-                     <input class = "form-control inputText" type="text" placeholder="Enter Email" name="email" required>
+                     <input class = "form-control inputText" type="email" placeholder="Enter Email" name="email" required>
 
-                     <input class = "form-control inputText" type="password" placeholder="Enter Password" name="psw" required>
+                     <input class = "form-control inputText" id = "password" 
+                     type="password" placeholder="Enter Password" name="psw" required>
 
-                     <input class = "form-control inputText" type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                     <input class = "form-control inputText" id = "confirm_password" type="password" placeholder="Repeat Password" name="psw-repeat" required>
 
-                      <button class="btn btn-primary form-btn" id= "next_step" type="button">NEXT</button>
+                      <button class="btn btn-primary form-btn" type="submit">NEXT</button>
                       <p>Already have an account?
                           <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#logInModal">Log In Here</a></p>
                     </form>
@@ -117,17 +120,20 @@
                </div>
 
                <div class="modal-body">
-                 <form action="userpage.html" class="modal-form">
-                   <input class = "form-control inputText" type="text" placeholder="Enter Email" name="email" required>
+                 <form action="userpage.html" id="signIn-form">
+                   <input id = "keyIn-email" class = "form-control inputText" type="text" placeholder="Enter Email" name="email" required>
 
-                   <input class = "form-control inputText" type="password" placeholder="Enter Password" name="psw" required>
+                   <input id = "keyIn-psw" class = "form-control inputText" type="password" placeholder="Enter Password" name="psw" required>
                    <button class="btn btn-primary form-btn" type="submit">LOG IN</button>
-                   <label>
-                       <input type="checkbox" checked="checked" name="remember"> Remember me
-                   </label>
-                   <p>Don't have an account!
-                        <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#signUpModal"">Sign Up Here</a></p>
-                      </form>
+                 </form>
+                 <label>
+                   <input type="checkbox" checked="checked" name="remember"> Remember me
+                 </label>
+                 <p>Don't have an account!
+                  <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#signUpModal"">Sign Up Here</a>
+                </p>
+                <p id="validation-info"></p>
+              </div>
            </div>
        </div>
    </div>
