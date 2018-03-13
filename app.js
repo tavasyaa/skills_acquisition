@@ -10,11 +10,26 @@ window.onclick = function(event) {
 //new Jquery Code 
 var interestCount = 0;
 
-$("#next_step").click(function(){
+$("#signUp-info-form").submit(function(){
 	$(".signUp-step-interest_picker").show();
 	$(".signUp-step-info").hide();
 	
 	event.stopPropagation();
+	return false;
+});
+
+$("#signIn-form").submit(function(){
+	var email = $("#keyIn-email");
+	var psw = $("#keyIn-psw");
+	var showInfo = $("#validation-info");
+	if(email.val() !== "chris@gmail.com"){
+		showInfo.text("Incorrect email address")
+		return false;
+	} else if(psw.val() !== "123456"){
+		showInfo.text("Incorrect password")
+		return false;
+	}
+	return true;
 });
 
 $("#previous_step").click(function(){
@@ -50,3 +65,18 @@ function updateCount(){
 $("#submit-btn").click(function(){
 	location.href = "userpage.html"
 });
+
+
+var password = document.getElementById("password");
+var confirm_password = document.getElementById("confirm_password");
+
+function validatePassword(){
+  if(password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("Passwords Don't Match");
+  } else {
+    confirm_password.setCustomValidity('');
+  }
+}
+
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
