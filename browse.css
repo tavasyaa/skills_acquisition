@@ -24,3 +24,7 @@
 .image-preview-clear {
   display:none;
 }
+
+.subscribe-btn:focus, .subscribe-btn:hover{
+    outline: none;
+}

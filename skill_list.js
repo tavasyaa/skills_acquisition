@@ -12,5 +12,4 @@ $(".subscribe-btn").click(function(){
 
     $(this).toggleClass("btn-info");
     $(this).toggleClass("btn-default");
-    updateCount();
 });
