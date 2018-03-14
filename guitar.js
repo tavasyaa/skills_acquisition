@@ -12,7 +12,7 @@ $(".subscribe-btn").click(function(){
         $(this).text("Subscribe");
     }
 
-    $(this).toggleClass("btn-info");
+    $(this).toggleClass("btn-primary");
     $(this).toggleClass("btn-default");
 });
 
