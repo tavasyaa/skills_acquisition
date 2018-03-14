@@ -19,6 +19,7 @@ h1.title-layouts {
 h1.title-layouts span {
     margin-right: 15px;
     color: #ffa200;
+    padding-left:89px;
 }
 
 h1.card-header {
@@ -57,6 +58,18 @@ h1.card-header {
 
 .skill_desc a {
   float:right;
+}
+
+.subscribe-btn:focus, .subscribe-btn:hover{
+    outline: none;
+}
+
+.like-btn:focus, .like-btn:hover{
+    outline: none;
+}
+
+.like2-btn:focus, .like2-btn:hover{
+    outline: none;
 }
 
 .right {

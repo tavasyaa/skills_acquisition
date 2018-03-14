@@ -1,3 +1,49 @@
+
+var interestCount = 0;
+var likeCount = 0;
+
+$(".subscribe-btn").click(function(){
+    if($(this).text()=="Subscribe"){
+        interestCount++;
+        $(this).text("Subscribed");
+
+    } else{
+        interestCount--;
+        $(this).text("Subscribe");
+    }
+
+    $(this).toggleClass("btn-info");
+    $(this).toggleClass("btn-default");
+});
+
+$(".like-btn").click(function(){
+  $(this).html(function(i, text){
+    return (text.indexOf("Liked") != -1) ? "<i class='glyphicon glyphicon-thumbs-up'></i> Like" : "<i class='glyphicon glyphicon-thumbs-up'></i> Liked"
+  })
+    if($(this).text()==" Liked"){
+        $('.likes').html("5 Likes");
+    } else{
+        $('.likes').html("4 Likes");
+    }
+
+    $(this).toggleClass("btn-success");
+    $(this).toggleClass("btn-default");
+})
+
+$(".like2-btn").click(function(){
+  $(this).html(function(i, text){
+    return (text.indexOf("Liked") != -1) ? "<i class='glyphicon glyphicon-thumbs-up'></i> Like" : "<i class='glyphicon glyphicon-thumbs-up'></i> Liked"
+  })
+    if($(this).text()==" Liked"){
+        $('.likes2').html("1 Like");
+    } else{
+        $('.likes2').html("0 Likes");
+    }
+
+    $(this).toggleClass("btn-success");
+    $(this).toggleClass("btn-default");
+})
+
 $(document).on('click', '#close-preview', function(){
     $('.image-preview').popover('hide');
     // Hover befor close the preview
