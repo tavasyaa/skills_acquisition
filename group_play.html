@@ -47,58 +47,64 @@
     <span class="badge badge-primary badge-pill"></span>
   </li>
   <li class="list-group-item list-group-item-info d-flex justify-content-between align-items-center">
- 
     <a data-toggle="modal" data-target="#modal2"><img src="images/info.png" class="infobutton" onmouseover="" style="cursor: pointer;"></a>
     <div class="groupplayname">Group Play </div>
-
-
-
-
     <span class="badge badge-primary badge-pill">5</span>
   </li>
   </li>
   <li class="list-group-item d-flex justify-content-between align-items-center groupsjoined" id="secondlisting">
-    Jammin' Up
+  	    <img src="images/info.png" class="infobutton" onmouseover="" style="cursor: pointer;">
+    <div class="jamminup">Jammin' Up</div>
     <span class="badge badge-primary badge-pill">14</span>
   </li>
-  <li class="list-group-item d-flex justify-content-between align-items-center">
-    Concert Prep
-    <span class="badge badge-primary badge-pill">Join Group</span>
+  <li class="list-group-item d-flex justify-content-between align-items-center" id="concertprep">
+  	    <img src="images/info.png" class="infobutton" onmouseover="" style="cursor: pointer;">
+    <div class="concertprep">Concert Prep</div>
+    <span class="badge badge-primary badge-pill" onclick="joingroup()"  onmouseover="" style="cursor: pointer;" id="joingroup">Join Group</span>
   </li>
   <li class="list-group-item d-flex justify-content-between align-items-center groupsjoined">
-    Classical Music Recommendations
+  	    <img src="images/info.png" class="infobutton" onmouseover="" style="cursor: pointer;">
+    <div class="classical">Classical Music Recommendations</div>
     <span class="badge badge-primary badge-pill"></span>
   </li>
    <li class="list-group-item d-flex justify-content-between align-items-center groupsjoined">
-    Strumming patterns
+   	    <img src="images/info.png" class="infobutton" onmouseover="" style="cursor: pointer;">
+    <div class="strummingpatterns">Strumming patterns</div>
     <span class="badge badge-primary badge-pill">1</span>
   </li>
    <li class="list-group-item d-flex justify-content-between align-items-center">
-    Alternate Picking Group
+   	    <img src="images/info.png" class="infobutton" onmouseover="" style="cursor: pointer;">
+    <div class="alternate">Alternate Picking Group</div>
     <span class="badge badge-primary badge-pill">Join Group </span>
   </li>
    <li class="list-group-item d-flex justify-content-between align-items-center groupsjoined">
-   	White Stripes Fans
+   	    <img src="images/info.png" class="infobutton" onmouseover="" style="cursor: pointer;">
+   	<div class="whitestripes">White Stripes Fans</div>
     <span class="badge badge-primary badge-pill">1</span>
   </li>
    <li class="list-group-item d-flex justify-content-between align-items-center groupsjoined">
-    Bangin it
+   	    <img src="images/info.png" class="infobutton" onmouseover="" style="cursor: pointer;">
+    <div class="banginit">Bangin it</div>
     <span class="badge badge-primary badge-pill">5</span>
   </li>
    <li class="list-group-item d-flex justify-content-between align-items-center">
+   	    <img src="images/info.png" class="infobutton" onmouseover="" style="cursor: pointer;">
     The Annual Wake Street Show
     <span class="badge badge-primary badge-pill">Join Group</span>
   </li>
      <li class="list-group-item d-flex justify-content-between align-items-center" id="lastvisiblegroup">
-    Anyone wanna watch Green Day?
+     	 <img src="images/info.png" class="infobutton" onmouseover="" style="cursor: pointer;">
+    <div class="metallica">Anyone likes Metallica?</div>
     <span class="badge badge-primary badge-pill">Join Group</span>
   </li>
      <li class="list-group-item d-flex justify-content-between align-items-center">
-    Help with rhythm mistakes!
+     	 <img src="images/info.png" class="infobutton" onmouseover="" style="cursor: pointer;">
+    <div class="rhythm">Help with rhythm mistakes!</div>
     <span class="badge badge-primary badge-pill">Join Group</span>
   </li>
      <li class="list-group-item d-flex justify-content-between align-items-center">
-    String quality
+     	<img src="images/info.png" class="infobutton" onmouseover="" style="cursor: pointer;">
+    <div class="stringquality">String quality</div>
     <span class="badge badge-primary badge-pill">Join Group</span>
   </li>
 </ul>
@@ -115,12 +121,12 @@
 <div class="card chat">
   <div class="card-body" id="card-body">
   	<div class="card chatitem">
-  <div class="card-body">
+  <div class="card-body"  id="chat0">
     bob1324: Let's play this Saturday at 5?
   </div>
 </div>
 <div class="card chatitem">
-  <div class="card-body">
+  <div class="card-body" id="chat1">
     mechwiz: Oh yea that works for me!
   </div>
 </div>
@@ -136,19 +142,40 @@
   <div class="card-body">
   </div>
 </div>
+<div class="card chatitem">
+  <div class="card-body">
+  </div>
+</div>
+<div class="card chatitem">
+  <div class="card-body">
+  </div>
+</div>
+<div class="card chatitem">
+  <div class="card-body">
+  </div>
+</div>
+<div class="card chatitem">
+  <div class="card-body">
+  </div>
+</div>
+<div class="card chatitem">
+  <div class="card-body">
+  </div>
 </div>
 </div>
+</div>
 <br/>
 <br/>
 <br/>
 <br/>
+
+
+</div>
+
+</div>
 <div class="copyright text-center">
         <p class="groupplayfooter">© 2018 Skill list All rights reserved | Design by NU students
         </p>
-
-</div>
-
-</div>
 
 
 <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">

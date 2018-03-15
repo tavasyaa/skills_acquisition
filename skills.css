@@ -71,7 +71,7 @@
 	float: right;
 	position: relative;
 	top: 570px;
-	left: 11px;
+	left: 7px;
 }
 
 .searchpic {
@@ -115,4 +115,57 @@
 
 .groupplayfooter {
 	color: white;
+	position: relative;
+	top: 150px;
+	right: 240px;
+}
+
+.jamminup {
+	position: relative;
+	right: 95px;
+}
+
+.concertprep {
+	position: relative;
+	right: 65px;
+}
+
+.classical {
+	position: relative;
+	right: 65px;
+}
+
+.strummingpatterns {
+	position: relative;
+	right: 70px;
+}
+
+.alternate {
+	position: relative;
+	right: 25px;
+}
+
+.whitestripes {
+	position: relative;
+	right: 72px;
+}
+
+.banginit {
+	position: relative;
+	right: 105px;
+}
+
+.metallica{
+	position: relative;
+	right: 25px;
+}
+
+.rhythm {
+	position: relative;
+	right: 10px;
+}
+
+.stringquality {
+	position: relative;
+	right: 60px;
 }
