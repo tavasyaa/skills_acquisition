@@ -46,6 +46,7 @@
       </div>
       <!-- <div class="left">Column</div> -->
       <div class="middle">
+        <div class="input_post"></div>
         <div class="thumbnail">
           <div class="row">
           <div class="col-md-12">
@@ -149,16 +150,16 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
       </div>
       <div class="modal-body">
-        <form action="" method="POST">
+        <form class="post-update1" action="" method="POST">
 
             <div class="form-group">
                 <label for="title">Title</label>
-                <input type="text" class="form-control" name="title" />
+                <input type="text" class="form-control" name="title" id="post2title" required />
             </div>
 
             <div class="form-group">
                 <label for="description">Strategy</label>
-                <textarea rows="5" class="form-control" name="description" ></textarea>
+                <textarea rows="5" class="form-control" name="description" id="post2" required></textarea>
             </div>
 
             <div class="form-group">
@@ -179,10 +180,11 @@
                 </span>
             </div><!-- /input-group image-preview [TO HERE]-->
             </div>
+
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Create Strategy</button>
+        <button type="submit" class="btn btn-primary">Create Strategy</button>
       </div>
     </div>
   </div>
