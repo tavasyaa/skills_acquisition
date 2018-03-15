@@ -1,6 +1,10 @@
+
+var currentchat = 1;
+
 function sendchat() {
-	document.getElementById("chat-1").innerHTML = "Chris: " + document.getElementById("chat").value;
+	document.getElementById("chat-" + currentchat).innerHTML = "Chris: " + document.getElementById("chat").value;
 	document.getElementById("chat").value = "";
+	currentchat++;
 }
 
 function search() {
@@ -18,5 +22,11 @@ function joingroup(){
 	document.getElementById("joingroup").innerHTML = "23274923";
 	document.getElementById("chat0").innerHTML = "James02: Cool idea man!";
 	document.getElementById("chat1").innerHTML = "alex305: Yeah, definitely think you should try out the violins.";
-	document.getElementById("concertprep").style.backgroundColor = blue;
+	document.getElementById("concertprep").style.backgroundColor = '#AEEEEE';
+	document.getElementById("groupplay").style.backgroundColor = 'white';
+}
+
+function savegroup(){
+	document.getElementById("banginit").innerHTML = document.getElementById("namesave").value;
+	document.getElementById("namesave").value = "";
 }
