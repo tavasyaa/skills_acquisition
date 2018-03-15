@@ -13,9 +13,9 @@ if (form3){
 const liMaker3 = (text) => {
   const li3 = document.createElement('div');
   if (postcount==0){
-  var str = '<div class="thumbnail"><div class="row"><div class="col-md-12"><h4><strong><a href="#">'+text[0]+'</a></strong></h4><hr></div></div><div class="row"><div class="col-md-2"><a href="#"><img src="images/jackson.jpg" width="260" height="180" class="img-thumbnail" alt=""></a></div><div class="col-md-10"><p>'+text[1]+'</p><p><a class="btn btn-primary" href="dancingpost.html" role="button">Read More</a></p></div></div><div class="row"><div class="col-md-2"><p></p><p><i class="glyphicon glyphicon-user"></i> by <a href="#">Chris</a> | <i class="glyphicon glyphicon-calendar"></i> Sept 16th, 2012</p></div><div class="col-md-4"><p></p><p><i class="glyphicon glyphicon-comment"></i> <a href="#">0 Comments</a> | <i class="glyphicon glyphicon-thumbs-up"></i> <a href="#">0 Likes</a></p></div></div></div><hr>';
+  var str = '<div class="thumbnail"><div class="row"><div class="col-md-12"><h4><strong><a href="#">'+text[0]+'</a></strong></h4><hr></div></div><div class="row"><div class="col-md-2"><a href="#"><img src="images/jackson.jpg" width="260" height="180" class="img-thumbnail" alt=""></a></div><div class="col-md-10"><p>'+text[1]+'</p><p><a class="btn btn-primary" href="dancingpost.html" role="button">Read More</a></p></div></div><div class="row"><div class="col-md-2"><p></p><p><i class="glyphicon glyphicon-user"></i> by <a href="#">Chris</a> | <i class="glyphicon glyphicon-calendar"></i> Sept 16th, 2012</p></div><div class="col-md-4"><p></p><p><i class="glyphicon glyphicon-comment"></i> 0 Comments | <i class="glyphicon glyphicon-thumbs-up"></i> 0 Likes</p></div></div></div><hr>';
 }else{
-    var str = '<div class="thumbnail"><div class="row"><div class="col-md-12"><h4><strong><a href="#">'+text[0]+'</a></strong></h4><hr></div></div><div class="row"><div class="col-md-2"><a href="#"><img src="images/jackson.jpg" width="260" height="180" class="img-thumbnail" alt=""></a></div><div class="col-md-10"><p>'+text[1]+'</p><p><a class="btn btn-primary" href="#" role="button">Read More</a></p></div></div><div class="row"><div class="col-md-2"><p></p><p><i class="glyphicon glyphicon-user"></i> by <a href="#">Chris</a> | <i class="glyphicon glyphicon-calendar"></i> Sept 16th, 2012</p></div><div class="col-md-4"><p></p><p><i class="glyphicon glyphicon-comment"></i> <a href="#">0 Comments</a> | <i class="glyphicon glyphicon-thumbs-up"></i> <a href="#">0 Likes</a></p></div></div></div><hr>';
+    var str = '<div class="thumbnail"><div class="row"><div class="col-md-12"><h4><strong><a href="#">'+text[0]+'</a></strong></h4><hr></div></div><div class="row"><div class="col-md-2"><a href="#"><img src="images/jackson.jpg" width="260" height="180" class="img-thumbnail" alt=""></a></div><div class="col-md-10"><p>'+text[1]+'</p><p><a class="btn btn-primary" href="#" role="button">Read More</a></p></div></div><div class="row"><div class="col-md-2"><p></p><p><i class="glyphicon glyphicon-user"></i> by <a href="#">Chris</a> | <i class="glyphicon glyphicon-calendar"></i> Sept 16th, 2012</p></div><div class="col-md-4"><p></p><p><i class="glyphicon glyphicon-comment"></i> 0 Comments | <i class="glyphicon glyphicon-thumbs-up"></i> 0 Likes</p></div></div></div><hr>';
 }
   li3.insertAdjacentHTML('beforeend',str)
   ul3.prepend(li3);
@@ -53,7 +53,7 @@ const data2 = JSON.parse(localStorage.getItem('post_item'));
 if (form2){
 const liMaker2 = (text) => {
   const li2 = document.createElement('div');
-  var str = '<div class="thumbnail"><div class="row"><div class="col-md-12"><h4><strong><a href="#">'+text[0]+'</a></strong></h4><hr></div></div><div class="row"><div class="col-md-2"><a href="#"><img src="images/jackson.jpg" width="260" height="180" class="img-thumbnail" alt=""></a></div><div class="col-md-10"><p>'+text[1]+'</p><p><button type="button" class="btn btn-primary" href="#">Read more</button></p></div></div><div class="row"><div class="col-md-2"><p></p><p><i class="glyphicon glyphicon-user"></i> by <a href="#">Chris</a> | <i class="glyphicon glyphicon-calendar"></i> Sept 16th, 2012</p></div><div class="col-md-4"><p></p><p><i class="glyphicon glyphicon-comment"></i> <a href="#">0 Comments</a> | <i class="glyphicon glyphicon-thumbs-up"></i> <a href="#">0 Likes</a></p></div></div></div><hr>';
+  var str = '<div class="thumbnail"><div class="row"><div class="col-md-12"><h4><strong><a href="#">'+text[0]+'</a></strong></h4><hr></div></div><div class="row"><div class="col-md-2"><a href="#"><img src="images/jackson.jpg" width="260" height="180" class="img-thumbnail" alt=""></a></div><div class="col-md-10"><p>'+text[1]+'</p><p><button type="button" class="btn btn-primary" href="#">Read more</button></p></div></div><div class="row"><div class="col-md-2"><p></p><p><i class="glyphicon glyphicon-user"></i> by <a href="#">Chris</a> | <i class="glyphicon glyphicon-calendar"></i> Sept 16th, 2012</p></div><div class="col-md-4"><p></p><p><i class="glyphicon glyphicon-comment"></i> 0 Comments | <i class="glyphicon glyphicon-thumbs-up"></i> 0 Likes</p></div></div></div><hr>';
   li2.insertAdjacentHTML('beforeend',str)
   ul2.prepend(li2);
 }
@@ -81,6 +81,7 @@ const ul = document.querySelector('div.input_comment');
 // const button = document.querySelector('#button_submit');
 const input = document.getElementById('comment');
 let itemsArray = localStorage.getItem('guitar_item') ? JSON.parse(localStorage.getItem('guitar_item')) : [];
+var cmnts = 4;
 
 localStorage.setItem('guitar_item', JSON.stringify(itemsArray));
 const data = JSON.parse(localStorage.getItem('guitar_item'));
@@ -99,6 +100,8 @@ form.addEventListener('submit', function (e) {
   localStorage.setItem('guitar_item', JSON.stringify(itemsArray));
   liMaker(input.value);
   input.value = "";
+  $('.comnts').html(String(cmnts)+" Comments");
+  cmnts++;
 });
 
 data.forEach(item => {
@@ -110,6 +113,7 @@ const ul1 = document.querySelector('div.input_comment2');
 // const button1 = document.querySelector('#button_submit2');
 const input1 = document.getElementById('comment2');
 let itemsArray1 = localStorage.getItem('dancing_item') ? JSON.parse(localStorage.getItem('dancing_item')) : [];
+var cmnts2 = 1;
 
 localStorage.setItem('dancing_item', JSON.stringify(itemsArray1));
 const data1 = JSON.parse(localStorage.getItem('dancing_item'));
@@ -130,6 +134,8 @@ form1.addEventListener('submit', function (e) {
   localStorage.setItem('dancing_item', JSON.stringify(itemsArray1));
   liMaker1(input1.value);
   input1.value = "";
+  $('.comnts2').html(String(cmnts2)+" Comments");
+  cmnts2++;
 });
 
 data1.forEach(item => {
