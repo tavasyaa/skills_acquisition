@@ -1,71 +1,67 @@
-const form = document.querySelector('form.comment-update-form1');
-const ul = document.querySelector('p.input_comment');
+const form3 = document.querySelector('form.comment-update-form3');
+const ul3 = document.querySelector('p.input_comment3');
 // const button = document.querySelector('#button_submit');
-const input = document.getElementById('comment');
-let itemsArray = localStorage.getItem('items') ? JSON.parse(localStorage.getItem('items')) : [];
+const input3 = document.getElementById('comment3');
+let itemsArray3 = localStorage.getItem('items3') ? JSON.parse(localStorage.getItem('items3')) : [];
+var objDiv = document.getElementById("chatbox3");
 
-localStorage.setItem('items', JSON.stringify(itemsArray));
-const data = JSON.parse(localStorage.getItem('items'));
+localStorage.setItem('items3', JSON.stringify(itemsArray3));
+const data3 = JSON.parse(localStorage.getItem('items3'));
 
-const liMaker = (text) => {
-  const li = document.createElement('p');
+if (form3) {
+const liMaker3 = (text) => {
+  const li3 = document.createElement('p');
   var str = '<b>Chris: </b>' + text;
-  li.insertAdjacentHTML('beforeend',str)
-  ul.prepend(li);
+  li3.insertAdjacentHTML('beforeend',str)
+  ul3.append(li3);
 }
 
-form.addEventListener('submit', function (e) {
+form3.addEventListener('submit', function (e) {
   e.preventDefault();
 
-  itemsArray.push(input.value);
-  localStorage.setItem('items', JSON.stringify(itemsArray));
-  liMaker(input.value);
-  input.value = "";
+  itemsArray3.push(input3.value);
+  localStorage.setItem('items3', JSON.stringify(itemsArray3));
+  liMaker3(input3.value);
+  input3.value = "";
+  objDiv.scrollTop = objDiv.scrollHeight;
 });
 
-data.forEach(item => {
-  liMaker(item);
+data3.forEach(item => {
+  liMaker3(item);
 });
+}
 
-// button.addEventListener('click', function () {
-//   localStorage.clear();
-//   while (ul.firstChild) {
-//     ul.removeChild(ul.firstChild);
-//   }
-// });
 
-const form1 = document.querySelector('form.comment-update-form2');
-const ul1 = document.querySelector('p.input_comment2');
+const form4 = document.querySelector('form.comment-update-form4');
+const ul4 = document.querySelector('p.input_comment4');
 // const button1 = document.querySelector('#button_submit2');
-const input1 = document.getElementById('comment2');
-let itemsArray1 = localStorage.getItem('items1') ? JSON.parse(localStorage.getItem('items1')) : [];
+const input4 = document.getElementById('comment4');
+let itemsArray4 = localStorage.getItem('items4') ? JSON.parse(localStorage.getItem('items4')) : [];
+var objDiv2 = document.getElementById("chatbox4");
 
-localStorage.setItem('items1', JSON.stringify(itemsArray1));
-const data1 = JSON.parse(localStorage.getItem('items1'));
+localStorage.setItem('items4', JSON.stringify(itemsArray4));
+const data4 = JSON.parse(localStorage.getItem('items4'));
 
-const liMaker1 = (text) => {
-  const li1 = document.createElement('p');
+if (form4){
+const liMaker4 = (text) => {
+  const li4 = document.createElement('p');
   var str = '<b>Chris: </b>' + text;
-  li1.insertAdjacentHTML('beforeend',str)
-  ul1.prepend(li1);
+  li4.insertAdjacentHTML('beforeend',str)
+  ul4.append(li4);
 }
 
-form1.addEventListener('submit', function (e) {
+form4.addEventListener('submit', function (e) {
   e.preventDefault();
 
-  itemsArray1.push(input1.value);
-  localStorage.setItem('items1', JSON.stringify(itemsArray1));
-  liMaker1(input1.value);
-  input1.value = "";
+  itemsArray4.push(input4.value);
+  localStorage.setItem('items4', JSON.stringify(itemsArray4));
+  liMaker4(input4.value);
+  input4.value = "";
+  objDiv2.scrollTop = objDiv2.scrollHeight;
 });
 
-data1.forEach(item => {
-  liMaker1(item);
+data4.forEach(item => {
+  liMaker4(item);
 });
+}
 
-// button1.addEventListener('click', function () {
-//   localStorage.clear();
-//   while (ul1.firstChild) {
-//     ul1.removeChild(ul1.firstChild);
-//   }
-// });

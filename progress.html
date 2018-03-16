@@ -67,6 +67,28 @@
    		</div>
    	</div>
 
+    <div class="modal fade" id="goal-setting-modal2" role="dialog">
+       <div class="modal-dialog " role="document">
+           <div class="modal-content">
+               <div class="modal-header">
+                 <button type="button" class="close" data-dismiss="modal">&times;</button>
+                 <h2 class="modal-title">Goal Setting</h2>
+               </div>
+
+               <div class="modal-body">
+                 <form action="#" class="modal-form">
+                   <input class = "form-control inputText" type="text" placeholder="Enter a new goal" id = "goal-name2" name="goal-name" required>
+
+                   <input class = "form-control inputText" type="text" placeholder="Enter the estimated total hours to spend" id = "total-hour-goal2" name="total-hour-goal" required>
+
+                   <button class="btn btn-primary form-btn" id="update-goal-btn2" type="button">Submit</button>
+                   <p class="warning-message"><span class="label label-warning">Warning</span> this will reset your current progress</p>
+                 </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
 	<div class="middle">
 		<div class="img-thumbnail">
 	  <ul class="nav nav-tabs">
@@ -80,12 +102,10 @@
 	        <div class="col-sm-6 col-md-4">
 	            <div class="thumbnail">
 	              <div class="caption">
-	                <h3 class="skill-title"><a href="guitar.html">Guitar Playing </a></h3>
+	                <h3 class="skill-title"><a href="guitar.html">Guitar Playing </a><div class = "goal-op">
+                            <button href="#" class="btn btn-info" data-target="#goal-setting-modal" data-toggle="modal"><i class="fa fa-cog" aria-hidden="true"></i> Set/Change Goal</button>
+                        </div></h3>
 	                <h4 class="goal">Goal: <span id="goal1">Improve chord knowledge</span>
-	                	<div class = "goal-op">
-	                		<a href="#" data-target="#goal-setting-modal" data-toggle="modal"><i class="fa fa-cog" aria-hidden="true"></i> </a>
-	                		<a href="guitar.html"><i class="fa fa-share" aria-hidden="true"></i></a>
-	                	</div>
 	                </h4>
 	              </div>
 	              <div class="progress-"></div>
@@ -105,18 +125,37 @@
 	                  <input type="text" class="form-control text-hour" placeholder="hours you spent today" id="text-hour1">
 	                  <button type ="button" class ="btn btn-primary update-btn" id="update-btn1"> Submit </button>
 	                </form>
+                    <div class="commentspop">
+                      <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Click here to write and view comments</button>
+                  </div>
+                  <div class="collapse" id="collapseExample">
+                    <div class="thumbnail chat">
+                      <div id="chatbox" class="container">
+                      <p><b>Bruce:</b> Good job, Michael!</p>
+                      <p><b>Mary:</b> Fantastic, Michael! You should play next time.</p>
+                      <p class="input_comment"></p>
+                    </div>
+                  </div>
+                      <form class = "comment-update-form1" action="#">
+
+                      <input type="text" class="form-control text-hour" placeholder="Enter your comment here" id="comment" required>
+                      <button type ="submit" class ="btn btn-primary update-btn" id="button_submit"> Submit </button>
+                    </form>
+                  </div>
 	  			</div>
 			</div>
 
 	        <div class="col-sm-6 col-md-4">
 	            <div class="thumbnail">
 	              <div class="caption">
-	                <h3 class="skill-title">Leather Working</h3>
+	                <h3 class="skill-title"><a href="#">Leather Working</a><div class = "goal-op">
+                            <button href="#" class="btn btn-info" data-target="#goal-setting-modal2" data-toggle="modal"><i class="fa fa-cog" aria-hidden="true"></i> Set/Change Goal</button>
+                        </div></h3>
 	                <h4 class="goal">Goal: <span id="goal2">Master basic skill</span>
-	                	<div class = "goal-op">
+	                	<!-- <div class = "goal-op">
 	                		<a href="#"><i class="fa fa-cog" aria-hidden="true"></i> </a>
 	                		<a href="#"><i class="fa fa-share" aria-hidden="true"></i></a>
-	                	</div>
+	                	</div> -->
 
 	                </h4>
 	              </div>
@@ -136,6 +175,22 @@
 	                  <input type="text" class="form-control text-hour" placeholder="hours you spent today" id="text-hour2">
 	                  <button type ="button" class ="btn btn-primary update-btn" id="update-btn2"> Submit </button>
 	                </form>
+                    <div class="commentspop">
+                      <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">Click here to write and view comments</button>
+                  </div>
+                  <div class="collapse" id="collapseExample2">
+                      <div class="thumbnail chat">
+                      <div id="chatbox2" class="container">
+                      <p><b>John:</b> Good job, Michael!</p>
+                      <p><b>Susan:</b> Fantastic, Michael! You should sell your craftwork!</p>
+                      <p class="input_comment2"></p>
+                    </div>
+                  </div>
+                      <form class = "comment-update-form2" action="#">
+                      <input type="text" class="form-control text-hour" placeholder="Enter your comment here" id="comment2" required>
+                      <button type ="submit" class ="btn btn-primary update-btn" id="button_submit2"> Submit </button>
+                    </form>
+                  </div>
 	          	</div>
 	        </div>
 	  	</div>

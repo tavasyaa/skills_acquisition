@@ -70,12 +70,8 @@
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
                   <div class="caption">
-                    <h3 class="skill-title">Guitar Playing </h3>
+                    <h3 class="skill-title"><a href="guitar.html">Guitar Playing</a></h3>
                     <h4 class="goal">Goal: <span id="goal1">Improve chord knowledge</span>
-                        <div class = "goal-op">
-                            <a href="#" data-target="#goal-setting-modal" data-toggle="modal"><i class="fa fa-cog" aria-hidden="true"></i> </a>
-                            <a href="guitar.html"><i class="fa fa-share" aria-hidden="true"></i></a>
-                        </div>
                     </h4>
                   </div>
                   <div class="progress-"></div>
@@ -89,33 +85,42 @@
                   <div class="progress-info">
                     <p>He spent <span id = "spentHour1">132</span> hours</p>
                     <p><span id = "remainHour1">68</span> more hours to master</p>
+                    <!-- <div class = "goal-op">
+                            <button href="#" class="btn btn-info" data-target="#goal-setting-modal" data-toggle="modal"><i class="fa fa-cog" aria-hidden="true"></i> Set/Change Goal</button>
+                        </div> -->
                   </div>
 
                     <canvas id="lineChart1" width="40" height="25"></canvas>
-                      <div class="thumbnail chat">
-                      <div class="container">
-                      <p class="input_comment"></p>
+                    <div class="commentspop">
+                      <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Click here to write and view comments</button>
+                  </div>
+                  <div class="collapse" id="collapseExample">
+                    <div class="thumbnail chat">
+                      <div id="chatbox3" class="container">
                       <p><b>Bruce:</b> Good job, Michael!</p>
                       <p><b>Mary:</b> Fantastic, Michael! You should play next time.</p>
+                      <p class="input_comment3"></p>
                     </div>
                   </div>
-                      <form class = "comment-update-form1" action="#">
+                      <form class = "comment-update-form3" action="#">
 
-                      <input type="text" class="form-control text-hour" placeholder="Enter your comment here" id="comment" required>
+                      <input type="text" class="form-control text-hour" placeholder="Enter your comment here" id="comment3" required>
                       <button type ="submit" class ="btn btn-primary update-btn" id="button_submit"> Submit </button>
                     </form>
+                  </div>
+
                 </div>
             </div>
 
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
                   <div class="caption">
-                    <h3 class="skill-title">Leather Working</h3>
+                    <h3 class="skill-title"><a href="#">Leather Working</a></h3>
                     <h4 class="goal">Goal: <span id="goal2">Master basic skill</span>
-                        <div class = "goal-op">
+                        <!-- <div class = "goal-op">
                             <a href="#"><i class="fa fa-cog" aria-hidden="true"></i> </a>
                             <a href="#"><i class="fa fa-share" aria-hidden="true"></i></a>
-                        </div>
+                        </div> -->
 
                     </h4>
                   </div>
@@ -132,17 +137,22 @@
                   </div>
 
                   <canvas id="lineChart2" width="40" height="25"></canvas>
+                  <div class="commentspop">
+                      <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">Click here to write and view comments</button>
+                  </div>
+                  <div class="collapse" id="collapseExample2">
                       <div class="thumbnail chat">
-                      <div class="container">
-                      <p class="input_comment2"></p>
+                      <div id="chatbox4" class="container">
                       <p><b>John:</b> Good job, Michael!</p>
                       <p><b>Susan:</b> Fantastic, Michael! You should sell your craftwork!</p>
+                      <p class="input_comment4"></p>
                     </div>
                   </div>
-                      <form class = "comment-update-form2" action="#">
-                      <input type="text" class="form-control text-hour" placeholder="Enter your comment here" id="comment2" required>
+                      <form class = "comment-update-form4" action="#">
+                      <input type="text" class="form-control text-hour" placeholder="Enter your comment here" id="comment4" required>
                       <button type ="submit" class ="btn btn-primary update-btn" id="button_submit2"> Submit </button>
                     </form>
+                  </div>
                 </div>
             </div>
         </div>

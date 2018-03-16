@@ -74,6 +74,11 @@ body {
   margin: 20px auto;
 }
 
+.commentspop {
+  margin:20px auto;
+  text-align:center;
+}
+
 .goal{
 	margin: 0 auto;
 	line-height: 1.2;
@@ -82,11 +87,12 @@ body {
 .goal-op{
 	font-size: 14px;
 	float:right;
-	color:#557c79;
-	background-color: #c6c5c5;
-	border-radius:15%;
+	/*color:#557c79;*/
+	/*background-color: #c6c5c5;*/
+  /*position:relative;
+  top:10px;
 	padding: 2px 5px;
-	margin: auto 0;
+	margin: auto 0;*/
 }
 
 .inputText {
@@ -143,7 +149,7 @@ body {
 }
 
 .container{
-    max-height:50px;
+    max-height:300px;
     overflow-y:auto;
     overflow-x:hidden;
     width:inherit;
