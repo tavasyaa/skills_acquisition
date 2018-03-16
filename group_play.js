@@ -20,8 +20,8 @@ function savegroup(){
 
 function joingroup(){
 	document.getElementById("joingroup").innerHTML = "23274923";
-	document.getElementById("chat0").innerHTML = "James02: Cool idea man!";
-	document.getElementById("chat1").innerHTML = "alex305: Yeah, definitely think you should try out the violins.";
+	document.getElementById("chat0").innerHTML = "bob1324: Let's play this Saturday at 5?";
+	document.getElementById("chat1").innerHTML = "mechwiz: Oh yea that works for me!";
 	document.getElementById("concertprep").style.backgroundColor = '#AEEEEE';
 	document.getElementById("groupplay").style.backgroundColor = 'white';
 }

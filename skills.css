@@ -110,7 +110,7 @@
 
 .groupplayname {
 	position: relative;
-	left: -100px;
+	right:95px;
 }
 
 .groupplayfooter {
@@ -127,12 +127,12 @@
 
 .concertprep {
 	position: relative;
-	right: 65px;
+	right: 73px;
 }
 
 .classical {
 	position: relative;
-	right: 65px;
+	right: 85px;
 }
 
 .strummingpatterns {
